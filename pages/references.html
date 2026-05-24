@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python for Psychological Inquiry — Course Syllabus</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <button id="hamburger" aria-label="Toggle navigation" onclick="document.getElementById('sidebar').classList.toggle('open')">
+    <span></span><span></span><span></span>
+    </button>
+
+    <!-- SIDEBAR -->
+    <aside id="sidebar">
+    <div class="brand">
+        <div class="course-tag">BSc Psychology · Year 2</div>
+        <h2>Python for Psychological Inquiry</h2>
+    </div>
+    <nav>
+        <div class="nav-section">Course</div>
+        <a href="../index.html">Home Page</a>
+
+        <div class="nav-section">Units</div>
+        <a href="../pages/units.html" class="unit-link">More Details</a>
+
+        <div class="nav-section">Reference</div>
+        <a href="#assessment">Assessment</a>
+        <a href="#resources">Resources</a>
+        <a href="#instructor">Instructor Notes</a>
+    </nav>
+    </aside>
+
+<!-- MAIN -->
+<div id="main">
+
+  <!-- HERO -->
+  <header id="hero">
+    <div class="eyebrow">Course Syllabus &amp; Teaching Plan</div>
+    <h1>Python for Psychological Inquiry</h1>
+    <p class="subtitle">A Problem-Solving Approach to Programming</p>
+    <div class="meta-grid">
+      <div class="meta-card"><div class="label">Programme</div><div class="value">BSc Psychology</div></div>
+      <div class="meta-card"><div class="label">Year / Semester</div><div class="value">Year 2 Odd Semester</div></div>
+      <div class="meta-card"><div class="label">Credits</div><div class="value">4 Credits</div></div>
+      <div class="meta-card"><div class="label">Total Hours</div><div class="value">30 hrs (instructional and assessment)</div></div>
+      <div class="meta-card"><div class="label">Prerequisites</div><div class="value">Statistics (4 credits) · R Programming (2 credits)</div></div>
+      <div class="meta-card"><div class="label">Concurrent Course</div><div class="value">Advanced Statistics</div></div>
+    </div>
+  </header>
+
+  <div class="content-wrap">
+
+    <!-- ASSESSMENT -->
+    <section id="assessment">
+      <h2 class="section-title"><span class="section-icon">✓</span> Assessment Framework</h2>
+      <p>Assessment is continuous and process-oriented. The objective is not to test whether students can produce a correct output under examination conditions, but whether they have developed the habits of thinking that will serve them in research and practice. <strong>There is no final written examination.</strong></p>
+
+      <table class="assess-table">
+        <thead><tr><th>Component</th><th>Description</th><th>Weight</th><th>CO Mapped</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Unit 1 — Function Library</strong></td>
+            <td>Documented set of functions from Unit 1</td>
+            <td class="weight">10 marks</td>
+            <td><span class="co-badge">CO1</span><span class="co-badge">CO2</span></td>
+          </tr>
+          <tr>
+            <td><strong>Unit 2 — Data Inspection Report</strong></td>
+            <td>Pre-analysis report on an assigned dataset</td>
+            <td class="weight">15 marks</td>
+            <td><span class="co-badge">CO2</span><span class="co-badge">CO3</span></td>
+          </tr>
+          <tr>
+            <td><strong>Unit 3 — Annotated Analysis</strong></td>
+            <td>Step-by-step commented inferential analysis</td>
+            <td class="weight">25 marks</td>
+            <td><span class="co-badge">CO4</span><span class="co-badge">CO5</span></td>
+          </tr>
+          <!-- <tr>
+            <td><strong>Unit 4 — Pipeline Notebook</strong></td>
+            <td>End-to-end analysis on an unseen dataset</td>
+            <td class="weight">25%</td>
+            <td><span class="co-badge">CO5</span><span class="co-badge">CO6</span></td>
+          </tr>
+          <tr>
+            <td><strong>Reflection Essay</strong></td>
+            <td>300–400 words responding to the Section 4.5 prompts</td>
+            <td class="weight">15%</td>
+            <td><span class="co-badge">CO1</span><span class="co-badge">CO6</span></td>
+          </tr> -->
+        </tbody>
+      </table>
+
+      <h3 class="subsection">A Note on Grading Code</h3>
+      <p>When evaluating submitted scripts and notebooks, priority is given in the following order:</p>
+      <ol>
+        <li><strong>Correctness of thinking:</strong> does the student's approach demonstrate understanding of what they are trying to compute and why?</li>
+        <li><strong>Clarity and documentation:</strong> can the reader follow the logic without running the code?</li>
+        <li><strong>Correctness of output:</strong> does the code produce the right answer?</li>
+        <li><strong>Elegance and efficiency:</strong> is the code concise without sacrificing clarity?</li>
+      </ol>
+      <em class="note">A script that is well-reasoned and clearly documented but produces a minor numerical error will be graded more generously than a script that produces the correct output with no indication that the student understands what it means.</em>
+    </section>
+
+    <!-- RESOURCES -->
+    <section id="resources">
+      <h2 class="section-title"><span class="section-icon">◧</span> Resources and Tools</h2>
+
+      <h3 class="subsection">Software</h3>
+      <ul>
+        <li><strong>Python 3.10+</strong> — freely available from python.org</li>
+        <li><strong>Anaconda distribution</strong> — recommended; includes Jupyter, pandas, numpy, matplotlib, scipy, and seaborn in a single installation</li>
+        <li><strong>Jupyter Notebooks</strong> — for literate programming sessions and submitted assessments</li>
+        <li><strong>Visual Studio Code</strong> with the Python extension — optional alternative for students comfortable with an IDE</li>
+      </ul>
+
+      <h3 class="subsection">Datasets</h3>
+      <ul>
+        <li>Open Psychometrics (openpsychometrics.org) — freely available psychology survey datasets</li>
+        <li>UCI Machine Learning Repository — well-documented datasets suitable for teaching</li>
+        <li>Synthetic datasets generated by the instructor, drawn from realistic psychological measurement scenarios</li>
+      </ul>
+
+      <h3 class="subsection">Reference Reading</h3>
+      <ul>
+        <li><em>Think Python</em>, 2nd Ed. (Downey, 2015) — available free online; focused on computational thinking</li>
+        <li><em>Python for Data Analysis</em> (McKinney, 2022) — authoritative reference for pandas</li>
+        <li><em>Telling Stories with Data</em> (Alexander, 2023) — addresses reproducible research and ethical reporting</li>
+        <li><em>How Charts Lie</em> (Cairo, 2019) — essential reading for Section 4.2</li>
+      </ul>
+
+      <h3 class="subsection">Concurrent Course Coordination</h3>
+      <p>The following topics are designed to appear in both courses within the same two-week window:</p>
+      <ul>
+        <li>Hypothesis testing framework — Unit 3, Sessions 3.1 and 3.2</li>
+        <li>t-Tests (paired and independent) — Section 3.2</li>
+        <li>Pearson's and Spearman's correlation — Section 3.3</li>
+        <li>Introduction to regression — Section 3.5</li>
+        <li>Chi-Square — Section 3.5</li>
+      </ul>
+      <em class="note">Instructors of both courses are encouraged to reference each other's material explicitly so students experience a genuinely integrated curriculum rather than two separate courses that happen to share vocabulary.</em>
+    </section>
+
+    <!-- INSTRUCTOR NOTES -->
+    <section id="instructor">
+      <h2 class="section-title"><span class="section-icon">⚑</span> Instructor Notes</h2>
+
+      <h3 class="subsection">Managing the Transition from R</h3>
+      <p>The most common early frustration is syntactic: "In R I just did this one thing, why is Python different?" The recommended response is not to say "Python is better" or "R is better" but to ask: "What problem were you solving in R, and how does Python ask you to solve it?" This orients students toward the underlying concept rather than the surface syntax.</p>
+
+      <h3 class="subsection">Supporting Students Who Struggle with Abstraction</h3>
+      <p>Functions — particularly the distinction between defining and calling, and between parameters and arguments — are a common sticking point. The best intervention is a concrete analogy: a recipe is a function definition; following the recipe for a specific set of ingredients is calling it. The recipe does not cook anything on its own.</p>
+      <p>Students who find abstraction difficult often excel at concrete activities. Extended practice with small functions that do one thing is more effective than explanation.</p>
+
+      <h3 class="subsection">Handling the Concurrent Statistics Pressure</h3>
+      <p>Students are simultaneously learning inferential statistics formally and encountering it computationally. There will be weeks when the statistics course is demanding and students arrive intellectually stretched. On those weeks, reduce the pace and privilege consolidation over progression. Sessions 3.3 (correlation) and 3.5 (regression and chi-square) are most suitable for slowing down.</p>
+
+      <h3 class="subsection">Ethical Discussions</h3>
+      <p>Several sessions include ethical touchpoints. These are not interruptions to the technical content — they are part of it. The goal is to make students uncomfortable with the idea that analysis can be ethically neutral. The instructor's role is to ask questions, not to provide correct answers.</p>
+
+      <h3 class="subsection">Assessment Feedback</h3>
+      <p>Feedback on submitted work should be specific about reasoning, not just output. "Your function returns the correct mean" is less useful than "Your function correctly computes the sum and divides by length, but note that <code>len()</code> returns an integer — in what situation could this cause a problem?" The latter teaches students to anticipate edge cases, which is a core programming skill.</p>
+    </section>
+
+  </div><!-- .content-wrap -->
+
+  <footer>
+    <strong>Python for Psychological Inquiry</strong> — Course Syllabus<br>
+    BSc Psychology, Year 2 Odd Semester · Designed for an Indian Institute Context
+  </footer>
+
+</div><!-- #main -->
+
+<script>
+  // Active nav link on scroll
+  const sections = document.querySelectorAll('section[id], header[id]');
+  const navLinks = document.querySelectorAll('#sidebar nav a');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(a => a.classList.remove('active'));
+        const active = document.querySelector(`#sidebar nav a[href="#${entry.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px' });
+
+  sections.forEach(s => observer.observe(s));
+
+  // Close mobile sidebar on link click
+  navLinks.forEach(a => {
+    a.addEventListener('click', () => {
+      document.getElementById('sidebar').classList.remove('open');
+    });
+  });
+</script>
+</body>
+</html>
