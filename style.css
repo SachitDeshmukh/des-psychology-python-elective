@@ -684,7 +684,7 @@ footer strong {
   #sidebar { display: none; }
   #main { margin-left: 0; }
   .session-body { display: block !important; }
-  .unit-banner { background: var(--navy) !important; -webkit-print-color-adjust: exact; }
+  .unit-banner { background: var(--navy) !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
 
 /* ── RESPONSIVE ──────────────────────────────── */
