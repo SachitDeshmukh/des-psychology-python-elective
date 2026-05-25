@@ -210,7 +210,7 @@ body {
 /* ── CONTENT SECTIONS ────────────────────────── */
 
 .content-wrap {
-  max-width: 860px;
+  display: block;
   padding: 56px 64px;
 }
 
