@@ -137,7 +137,7 @@ body {
   top: -40px;
   right: -40px;
   width: 320px;
-  height: 320px;
+  height: auto;
   border-radius: 50%;
   background: rgba(42,122,122,0.18);
   pointer-events: none;
