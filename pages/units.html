@@ -1,769 +1,1064 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Python for Psychological Inquiry — Course Syllabus</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-    <button id="hamburger" aria-label="Toggle navigation" onclick="document.getElementById('sidebar').classList.toggle('open')">
-  <span></span><span></span><span></span>
-</button>
+  <button id="hamburger" aria-label="Toggle navigation"
+    onclick="document.getElementById('sidebar').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
 
-<!-- SIDEBAR -->
-<aside id="sidebar">
-  <div class="brand">
-    <div class="course-tag">BSc Psychology · Year 2</div>
-    <h2>Python for Psychological Inquiry</h2>
-  </div>
-  <nav>
-    <div class="nav-section">Course</div>
-    <a href="../index.html">Home Page</a>
-
-    <div class="nav-section">Units</div>
-    <a href="#unit1" class="unit-link">Unit 1 — Instructions to Ideas</a>
-    <a href="#s1-1" class="sub-link">1.1 Algorithms</a>
-    <a href="#s1-2" class="sub-link">1.2 Variables & Types</a>
-    <a href="#s1-3" class="sub-link">1.3 Conditions</a>
-    <a href="#s1-4" class="sub-link">1.4 Loops</a>
-    <a href="#s1-5" class="sub-link">1.5 Functions</a>
-
-    <a href="#unit2" class="unit-link">Unit 2 — Understand and manipulate data structures</a>
-    <a href="#s2-1" class="sub-link">2.1 Collections</a>
-    <a href="#s2-2" class="sub-link">2.2 DataFrames</a>
-    <a href="#s2-3" class="sub-link">2.3 Missing Data</a>
-    <a href="#s2-4" class="sub-link">2.4 Descriptive Stats</a>
-    <a href="#s2-5" class="sub-link">2.5 Visualisation</a>
-
-    <a href="#unit3" class="unit-link">Unit 3 — Patterns & Evidence</a>
-    <a href="#s3-1" class="sub-link">3.1 Probability & Simulation</a>
-    <a href="#s3-2" class="sub-link">3.2 The t-Test</a>
-    <a href="#s3-3" class="sub-link">3.3 Correlation</a>
-    <a href="#s3-4" class="sub-link">3.4 Causation & Confounds</a>
-    <a href="#s3-5" class="sub-link">3.5 Regression & Chi-Square</a>
-
-    <a href="#unit4" class="unit-link">Unit 4 — Communicating</a>
-    <a href="#s4-1" class="sub-link">4.1 Reproducibility</a>
-    <a href="#s4-2" class="sub-link">4.2 Visualisation Ethics</a>
-    <a href="#s4-3" class="sub-link">4.3 Two Audiences</a>
-    <a href="#s4-4" class="sub-link">4.4 Pipeline Exercise</a>
-    <a href="#s4-5" class="sub-link">4.5 Reflection</a>
-
-    <div class="nav-section">Reference</div>
-    <a href="../pages/references.html">More Details</a>
-  </nav>
-</aside>
-
-<!-- MAIN -->
-<div id="main">
-
-  <!-- HERO -->
-  <header id="hero">
-    <div class="eyebrow">Course Syllabus &amp; Teaching Plan</div>
-    <h1>Python for Psychological Inquiry</h1>
-    <p class="subtitle">A Problem-Solving Approach to Programming</p>
-    <div class="meta-grid">
-      <div class="meta-card"><div class="label">Programme</div><div class="value">BSc Psychology</div></div>
-      <div class="meta-card"><div class="label">Year / Semester</div><div class="value">Year 2 Odd Semester</div></div>
-      <div class="meta-card"><div class="label">Credits</div><div class="value">4 Credits</div></div>
-      <div class="meta-card"><div class="label">Total Hours</div><div class="value">30 hrs (instructional and assessment)</div></div>
-      <div class="meta-card"><div class="label">Prerequisites</div><div class="value">Statistics (4 credits) · R Programming (2 credits)</div></div>
-      <div class="meta-card"><div class="label">Concurrent Course</div><div class="value">Advanced Statistics</div></div>
+  <!-- SIDEBAR -->
+  <aside id="sidebar">
+    <div class="brand">
+      <div class="course-tag">BSc Psychology · Year 2</div>
+      <h2>Python for Psychological Inquiry</h2>
     </div>
-  </header>
+    <nav>
+      <div class="nav-section">Course</div>
+      <a href="../index.html">Home Page</a>
 
-  <div class="content-wrap">
+      <div class="nav-section">Units</div>
+      <a href="#unit1" class="unit-link">Unit 1 — Instructions to Ideas</a>
+      <a href="#s1-1" class="sub-link">1.1 Algorithms</a>
+      <a href="#s1-2" class="sub-link">1.2 Variables & Types</a>
+      <a href="#s1-3" class="sub-link">1.3 Conditions</a>
+      <a href="#s1-4" class="sub-link">1.4 Loops</a>
+      <a href="#s1-5" class="sub-link">1.5 Functions</a>
 
-    <!-- ══ UNIT 1 ══ -->
-    <section id="unit1">
-      <div class="unit-banner">
-        <div class="unit-number">Unit 1 of 4</div>
-        <h2>The philosophy of computing</h2>
-        <div class="unit-question">"How does a computer understand what I mean?"</div>
-        <div class="unit-meta">
-          <span>6 hours</span>
-          <span>CO1, CO2</span>
+      <a href="#unit2" class="unit-link">Unit 2 — Understand and manipulate data structures</a>
+      <a href="#s2-1" class="sub-link">2.1 Collections</a>
+      <a href="#s2-2" class="sub-link">2.2 DataFrames</a>
+      <a href="#s2-3" class="sub-link">2.3 Missing Data</a>
+      <a href="#s2-4" class="sub-link">2.4 Descriptive Stats</a>
+      <a href="#s2-5" class="sub-link">2.5 Visualisation</a>
+
+      <a href="#unit3" class="unit-link">Unit 3 — Patterns & Evidence</a>
+      <a href="#s3-1" class="sub-link">3.1 Probability & Simulation</a>
+      <a href="#s3-2" class="sub-link">3.2 The t-Test</a>
+      <a href="#s3-3" class="sub-link">3.3 Correlation</a>
+      <a href="#s3-4" class="sub-link">3.4 Causation & Confounds</a>
+      <a href="#s3-5" class="sub-link">3.5 Regression & Chi-Square</a>
+
+      <a href="#unit4" class="unit-link">Unit 4 — Communicating</a>
+      <a href="#s4-1" class="sub-link">4.1 Reproducibility</a>
+      <a href="#s4-2" class="sub-link">4.2 Visualisation Ethics</a>
+      <a href="#s4-3" class="sub-link">4.3 Two Audiences</a>
+      <a href="#s4-4" class="sub-link">4.4 Pipeline Exercise</a>
+      <a href="#s4-5" class="sub-link">4.5 Reflection</a>
+
+      <div class="nav-section">Reference</div>
+      <a href="../pages/references.html">More Details</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <div id="main">
+
+    <!-- HERO -->
+    <header id="hero">
+      <div class="eyebrow">Course Syllabus &amp; Teaching Plan</div>
+      <h1>Python for Psychological Inquiry</h1>
+      <p class="subtitle">A Problem-Solving Approach to Programming</p>
+      <div class="meta-grid">
+        <div class="meta-card">
+          <div class="label">Programme</div>
+          <div class="value">BSc Psychology</div>
+        </div>
+        <div class="meta-card">
+          <div class="label">Year / Semester</div>
+          <div class="value">Year 2 Odd Semester</div>
+        </div>
+        <div class="meta-card">
+          <div class="label">Credits</div>
+          <div class="value">4 Credits</div>
+        </div>
+        <div class="meta-card">
+          <div class="label">Total Hours</div>
+          <div class="value">30 hrs (instructional and assessment)</div>
+        </div>
+        <div class="meta-card">
+          <div class="label">Prerequisites</div>
+          <div class="value">Statistics (4 credits) · R Programming (2 credits)</div>
+        </div>
+        <div class="meta-card">
+          <div class="label">Concurrent Course</div>
+          <div class="value">Advanced Statistics</div>
         </div>
       </div>
-      <p>This unit begins not with Python, but with a question: what does it actually mean to give instructions? Students discover that programming is a discipline of precision and that the challenge of writing code for a computer mirrors, in an illuminating way, the challenge of writing methods sections for psychology experiments.</p>
+    </header>
 
-      <div id="s1-1" class="session-card open">
-        <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
-          <span class="session-num">1.1</span>
-          <h4>What Is an Algorithm? Thinking Before Typing</h4>
-          <span class="session-toggle">▾</span>
-        </div>
-        <div class="session-body">
-          <div class="box box-mist"><div class="box-label">Section Overview</div>
-            <p>The session opens without a computer. Students are given a psychology scenario — scoring a questionnaire — and asked to write out, in plain English, the complete set of steps needed to go from raw responses to a final score. Groups compare their versions and discover where ambiguity crept in.</p>
+    <div class="content-wrap">
+
+      <!-- ══ UNIT 1 ══ -->
+      <section id="unit1">
+        <div class="unit-banner">
+          <div class="unit-number">Unit 1 of 4</div>
+          <h2>The philosophy of computing</h2>
+          <div class="unit-question">"How does a computer understand what I mean?"</div>
+          <div class="unit-meta">
+            <span>6 hours</span>
+            <span>CO1, CO2</span>
           </div>
-          <h4 class="session-title">Topics Covered</h4>
-          <ul>
-            <li>Definition and properties of an algorithm: unambiguous, finite, correct</li>
-            <li>The gap between human intention and machine instruction</li>
-            <li>Why computers need precision that humans take for granted</li>
-            <li>Introduction to the Python environment: Jupyter Notebooks or IDLE</li>
-            <li>Writing and running a first Python statement; understanding the REPL</li>
-          </ul>
-          <h4 class="session-title">Classroom Activity</h4>
-          <ul>
-            <li>Unplugged activity: groups write the algorithm for "compute the average Likert score from 10 responses, excluding any blank items"</li>
-            <li>Groups compare algorithms; instructor facilitates discussion of where they differ and what each difference implies</li>
-            <li>Live demo: show how Python executes each instruction one at a time</li>
-          </ul>
-          <em class="note">R to Python Bridge: Students will recognise the REPL from RStudio's console. R and Python are both interpreted languages — you write a line, the machine runs it. The syntax will look different, but the underlying philosophy is the same.</em>
         </div>
-      </div>
+        <p>This unit begins not with Python, but with a question: what does it actually mean to give instructions?
+          Students discover that programming is a discipline of precision and that the challenge of writing code for a
+          computer mirrors, in an illuminating way, the challenge of writing methods sections for psychology
+          experiments.</p>
 
-      <div id="s1-2" class="session-card">
-        <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
-          <span class="session-num">1.2</span>
-          <h4>Variables, Types, and the Psychology of Categories</h4>
-          <span class="session-toggle">▾</span>
-        </div>
-        <div class="session-body">
-          <div class="box box-mist"><div class="box-label">Section Overview</div>
-            <p>Variables are introduced not as 'boxes that store things' but as names we give to things so we can refer to them later. The four core data types are mapped directly onto students' existing knowledge of levels of measurement and data types from R.</p>
+        <div id="s1-1" class="session-card open">
+          <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
+            <span class="session-num">1.1</span>
+            <h4>What Is an Algorithm? Thinking Before Typing</h4>
+            <span class="session-toggle">▾</span>
           </div>
-          <h4 class="session-title">Topics Covered</h4>
-          <ul>
-            <li>Variables: assignment, naming conventions, reassignment</li>
-            <li>Integers and floats: when precision matters (age vs. reaction time in milliseconds)</li>
-            <li>Strings: representing names, categories, and text responses</li>
-            <li>Booleans: true/false as the basis of all decision-making</li>
-            <li><code>type()</code> and simple type conversion</li>
-            <li>Connecting Python types to levels of measurement: nominal (str), ordinal (int), interval/ratio (float)</li>
-          </ul>
-          <h4 class="session-title">Classroom Activity</h4>
-          <ul>
-            <li>Students are given a printed dataset card (5 participants, each with age, gender, anxiety_score, above_threshold) and decide which Python type to use for each variable</li>
-            <li>Live coding: building the dataset as individual variables, then discussing why this approach becomes unworkable at 500 participants</li>
-          </ul>
-          <em class="note">Discussion: Is a Likert scale score an integer or a float? Does it matter? What about storing someone's grade as 'A' versus as 4? This connects directly to measurement-level concepts from statistics.</em>
-        </div>
-      </div>
-
-      <div id="s1-3" class="session-card">
-        <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
-          <span class="session-num">1.3</span>
-          <h4>Decisions and Conditions: The If-Then Logic of Classification</h4>
-          <span class="session-toggle">▾</span>
-        </div>
-        <div class="session-body">
-          <div class="box box-mist"><div class="box-label">Section Overview</div>
-            <p>Conditional logic is presented as the computational version of diagnostic reasoning. Students build increasingly complex classifiers, encountering the concepts of mutual exclusivity and exhaustiveness along the way.</p>
+          <div class="session-body">
+            <div class="box box-mist">
+              <div class="box-label">Section Overview</div>
+              <p>The session opens without a computer. Students are given a psychology scenario — scoring a
+                questionnaire — and asked to write out, in plain English, the complete set of steps needed to go from
+                raw responses to a final score. Groups compare their versions and discover where ambiguity crept in.</p>
+            </div>
+            <h4 class="session-title">Topics Covered</h4>
+            <ul>
+              <li>Definition and properties of an algorithm: unambiguous, finite, correct</li>
+              <li>The gap between human intention and machine instruction</li>
+              <li>Why computers need precision that humans take for granted</li>
+              <li>Introduction to the Python environment: Jupyter Notebooks or IDLE</li>
+              <li>Writing and running a first Python statement; understanding the REPL</li>
+            </ul>
+            <h4 class="session-title">Classroom Activity</h4>
+            <ul>
+              <li>Unplugged activity: groups write the algorithm for "compute the average Likert score from 10
+                responses, excluding any blank items"</li>
+              <li>Groups compare algorithms; instructor facilitates discussion of where they differ and what each
+                difference implies</li>
+              <li>Live demo: show how Python executes each instruction one at a time</li>
+            </ul>
+            <em class="note">R to Python Bridge: Students will recognise the REPL from RStudio's console. R and Python
+              are both interpreted languages — you write a line, the machine runs it. The syntax will look different,
+              but the underlying philosophy is the same.</em>
           </div>
-          <h4 class="session-title">Topics Covered</h4>
-          <ul>
-            <li><code>if</code>, <code>elif</code>, <code>else</code>: structure and indentation</li>
-            <li>Comparison operators: <code>==</code>, <code>!=</code>, <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code></li>
-            <li>Logical operators: <code>and</code>, <code>or</code>, <code>not</code></li>
-            <li>Nesting conditions vs. chaining <code>elif</code></li>
-            <li>The concept of a decision boundary and its arbitrariness</li>
-          </ul>
-          <h4 class="session-title">Classroom Activity</h4>
-          <ul>
-            <li>Students implement the PHQ-9 scoring rubric as a Python function returning a severity category (minimal, mild, moderate, moderately severe, severe)</li>
-            <li>Extension: add validation logic — what should the function return if the score is negative, or greater than 27?</li>
-          </ul>
-          <em class="note">Ethical Touchpoint: Classification systems in psychology have real consequences. A person is not the same as their score, and a cut-off is a convention, not a truth. Code that implements a classification makes the arbitrariness of that convention invisible — a crucial point for future researchers.</em>
         </div>
-      </div>
 
-      <div id="s1-4" class="session-card">
-        <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
-          <span class="session-num">1.4</span>
-          <h4>Repetition and Loops: Automation as a Research Tool</h4>
-          <span class="session-toggle">▾</span>
-        </div>
-        <div class="session-body">
-          <div class="box box-mist"><div class="box-label">Section Overview</div>
-            <p>Loops are introduced as the answer to the question: "What if I need to do this for every participant?" Students see that automation is not laziness — it is reproducibility.</p>
+        <div id="s1-2" class="session-card">
+          <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
+            <span class="session-num">1.2</span>
+            <h4>Variables, Types, and the Psychology of Categories</h4>
+            <span class="session-toggle">▾</span>
           </div>
-          <h4 class="session-title">Topics Covered</h4>
-          <ul>
-            <li><code>for</code> loops over lists and ranges</li>
-            <li>Accumulators: building a running total or a collection</li>
-            <li><code>while</code> loops: iterating until a condition changes</li>
-            <li><code>break</code> and <code>continue</code>: controlling loop flow</li>
-            <li><code>enumerate()</code> for tracking position</li>
-            <li>Nested loops: brief introduction with a concrete example</li>
-          </ul>
-          <h4 class="session-title">Classroom Activity</h4>
-          <ul>
-            <li>Given a list of 20 raw test scores, students write a <code>for</code> loop to compute the total and mean without using <code>sum()</code> or <code>len()</code> — building these from scratch with an accumulator</li>
-            <li>Extension: loop over the scores again to flag any score more than 1.5 SDs from the mean</li>
-            <li>Discussion: why two passes? Could this be done in one pass? What does this tell us about the structure of the computation?</li>
-          </ul>
-        </div>
-      </div>
-
-      <div id="s1-5" class="session-card">
-        <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
-          <span class="session-num">1.5</span>
-          <h4>Functions: Naming What You Mean</h4>
-          <span class="session-toggle">▾</span>
-        </div>
-        <div class="session-body">
-          <div class="box box-mist"><div class="box-label">Section Overview</div>
-            <p>Functions are presented as a way of giving a name to a process — exactly as a researcher names a construct. Once defined, a function can be applied anywhere, ensuring consistency.</p>
+          <div class="session-body">
+            <div class="box box-mist">
+              <div class="box-label">Section Overview</div>
+              <p>Variables are introduced not as 'boxes that store things' but as names we give to things so we can
+                refer to them later. The four core data types are mapped directly onto students' existing knowledge of
+                levels of measurement and data types from R.</p>
+            </div>
+            <h4 class="session-title">Topics Covered</h4>
+            <ul>
+              <li>Variables: assignment, naming conventions, reassignment</li>
+              <li>Integers and floats: when precision matters (age vs. reaction time in milliseconds)</li>
+              <li>Strings: representing names, categories, and text responses</li>
+              <li>Booleans: true/false as the basis of all decision-making</li>
+              <li><code>type()</code> and simple type conversion</li>
+              <li>Connecting Python types to levels of measurement: nominal (str), ordinal (int), interval/ratio (float)
+              </li>
+            </ul>
+            <h4 class="session-title">Classroom Activity</h4>
+            <ul>
+              <li>Students are given a printed dataset card (5 participants, each with age, gender, anxiety_score,
+                above_threshold) and decide which Python type to use for each variable</li>
+              <li>Live coding: building the dataset as individual variables, then discussing why this approach becomes
+                unworkable at 500 participants</li>
+            </ul>
+            <em class="note">Discussion: Is a Likert scale score an integer or a float? Does it matter? What about
+              storing someone's grade as 'A' versus as 4? This connects directly to measurement-level concepts from
+              statistics.</em>
           </div>
-          <h4 class="session-title">Topics Covered</h4>
-          <ul>
-            <li><code>def</code> syntax, parameters, and <code>return</code></li>
-            <li>The difference between printing and returning</li>
-            <li>Default parameter values</li>
-            <li>Docstrings: documenting what a function does, not how</li>
-            <li>Calling a function vs. defining it</li>
-            <li>Brief preview of the Python Standard Library as 'functions other people wrote'</li>
-          </ul>
-          <h4 class="session-title">Classroom Activity</h4>
-          <ul>
-            <li>Students refactor work from Sessions 1.2–1.4 into a small library of functions: <code>compute_mean(scores)</code>, <code>compute_sd(scores)</code>, <code>classify_severity(score)</code>, <code>flag_outliers(scores, threshold)</code></li>
-            <li>Pair exercise: swap code with a partner. Can you understand what each function does from its name and docstring alone?</li>
-          </ul>
-          <em class="note">Unit 1 Closing Reflection: Before this unit, most students experienced programming as typing commands. After this unit, they should experience it as designing a sequence of clearly named, intentional steps.</em>
         </div>
-      </div>
 
-      <h3 class="subsection">Unit 1 Section Summary</h3>
-      <table class="session-table">
-        <thead><tr><th>Section</th><th>Topic</th><th>Key Activities</th><th>Deliverable</th></tr></thead>
-        <tbody>
-          <tr><td>1.1</td><td>Algorithms &amp; Python Environment</td><td>Unplugged algorithm design, REPL exploration</td><td>Written algorithm for a scoring task</td></tr>
-          <tr><td>1.2</td><td>Variables and Data Types</td><td>Dataset card exercise, live coding</td><td>Typed variable annotations for a dataset</td></tr>
-          <tr><td>1.3</td><td>Conditions and Classification</td><td>PHQ-9 classifier implementation</td><td>Working if/elif/else classifier</td></tr>
-          <tr><td>1.4</td><td>Loops and Automation</td><td>Score processing with accumulators</td><td>Mean and outlier-flagging script</td></tr>
-          <tr><td>1.5</td><td>Functions and Abstraction</td><td>Refactoring, peer code reading</td><td>Documented function library</td></tr>
-        </tbody>
-      </table>
-    </section>
-
-    <!-- ══ UNIT 2 ══ -->
-    <section id="unit2">
-      <div class="unit-banner">
-        <div class="unit-number">Unit 2 of 4</div>
-        <h2>Understand and manipulate data structures</h2>
-        <div class="unit-question">"How do I represent and explore what I have collected?"</div>
-        <div class="unit-meta">
-          <span>6 hours</span>
-          <span>CO2, CO3, CO4</span>
-        </div>
-      </div>
-      <p>Before any analysis can be trusted, the data must be understood. This unit addresses a truth that is often glossed over in methods training: real datasets are messy, and the decisions made during cleaning are analytical decisions with consequences.</p>
-
-      <div id="s2-1" class="session-card">
-        <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
-          <span class="session-num">2.1</span>
-          <h4>Collections: Lists, Dictionaries, and the Shape of Data</h4>
-          <span class="session-toggle">▾</span>
-        </div>
-        <div class="session-body">
-          <div class="box box-mist"><div class="box-label">Section Overview</div>
-            <p>Students now confront the need to work with many values at once. This session introduces lists and dictionaries as the two fundamental collection types, and asks students to think carefully about which is the right choice for a given representation task.</p>
+        <div id="s1-3" class="session-card">
+          <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
+            <span class="session-num">1.3</span>
+            <h4>Decisions and Conditions: The If-Then Logic of Classification</h4>
+            <span class="session-toggle">▾</span>
           </div>
-          <h4 class="session-title">Topics Covered</h4>
-          <ul>
-            <li>Lists: ordered, indexed, mutable — for sequences of same-kind data</li>
-            <li>List operations: append, remove, slicing, indexing, length</li>
-            <li>Dictionaries: key-value pairs — for structured records</li>
-            <li>Choosing between lists and dictionaries: a design decision, not a syntax question</li>
-            <li>Lists of dictionaries as a natural model for a dataset of participants</li>
-            <li>Tuples: briefly — when immutability matters</li>
-          </ul>
-          <h4 class="session-title">Classroom Activity</h4>
-          <ul>
-            <li>Students receive a paper participant record and represent it first as a list, then as a dictionary. A second participant is added — discussion follows about which representation scales more naturally</li>
-            <li>Guided coding: building a list of participant dictionaries and writing a loop to extract all ages</li>
-          </ul>
-          <em class="note">Conceptual Bridge: In R, the dataframe was given to students from the start. Here, they are building up to it. Understanding why a dataframe is useful requires understanding what it replaces.</em>
-        </div>
-      </div>
-
-      <div id="s2-2" class="session-card">
-        <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
-          <span class="session-num">2.2</span>
-          <h4>The Pandas DataFrame: Data as a Table</h4>
-          <span class="session-toggle">▾</span>
-        </div>
-        <div class="session-body">
-          <div class="box box-mist"><div class="box-label">Section Overview</div>
-            <p>Pandas is introduced not as a library to be memorised but as a natural extension of what students just built. The session focuses on loading, inspecting, and understanding a dataset before touching it.</p>
+          <div class="session-body">
+            <div class="box box-mist">
+              <div class="box-label">Section Overview</div>
+              <p>Conditional logic is presented as the computational version of diagnostic reasoning. Students build
+                increasingly complex classifiers, encountering the concepts of mutual exclusivity and exhaustiveness
+                along the way.</p>
+            </div>
+            <h4 class="session-title">Topics Covered</h4>
+            <ul>
+              <li><code>if</code>, <code>elif</code>, <code>else</code>: structure and indentation</li>
+              <li>Comparison operators: <code>==</code>, <code>!=</code>, <code>&lt;</code>, <code>&gt;</code>,
+                <code>&lt;=</code>, <code>&gt;=</code></li>
+              <li>Logical operators: <code>and</code>, <code>or</code>, <code>not</code></li>
+              <li>Nesting conditions vs. chaining <code>elif</code></li>
+              <li>The concept of a decision boundary and its arbitrariness</li>
+            </ul>
+            <h4 class="session-title">Classroom Activity</h4>
+            <ul>
+              <li>Students implement the PHQ-9 scoring rubric as a Python function returning a severity category
+                (minimal, mild, moderate, moderately severe, severe)</li>
+              <li>Extension: add validation logic — what should the function return if the score is negative, or greater
+                than 27?</li>
+            </ul>
+            <em class="note">Ethical Touchpoint: Classification systems in psychology have real consequences. A person
+              is not the same as their score, and a cut-off is a convention, not a truth. Code that implements a
+              classification makes the arbitrariness of that convention invisible — a crucial point for future
+              researchers.</em>
           </div>
-          <h4 class="session-title">Topics Covered</h4>
-          <ul>
-            <li><code>import pandas as pd</code>: the import statement and the alias convention</li>
-            <li><code>pd.read_csv()</code>: loading real data</li>
-            <li><code>df.head()</code>, <code>df.tail()</code>, <code>df.shape</code>, <code>df.dtypes</code>, <code>df.info()</code></li>
-            <li>Accessing columns and rows: <code>df['column']</code>, <code>df.iloc[]</code>, <code>df.loc[]</code></li>
-            <li>Basic filtering: <code>df[df['column'] &gt; value]</code></li>
-            <li><code>df.describe()</code>: descriptive statistics at a glance — and why glance is not enough</li>
-          </ul>
-          <h4 class="session-title">Classroom Activity</h4>
-          <ul>
-            <li>Students load a psychology dataset and answer a checklist of questions before performing any analysis: How many participants? What are the data types? Are there obvious outliers? Are there missing values?</li>
-            <li>Discussion: what would happen if we skipped these steps and ran an analysis immediately?</li>
-          </ul>
         </div>
-      </div>
 
-      <div id="s2-3" class="session-card">
-        <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
-          <span class="session-num">2.3</span>
-          <h4>Missing Data: The Values That Are Not There</h4>
-          <span class="session-toggle">▾</span>
-        </div>
-        <div class="session-body">
-          <div class="box box-mist"><div class="box-label">Section Overview</div>
-            <p>Missing data is one of the most consequential and most neglected topics in quantitative psychology training. This session treats it as a conceptual problem first — why is data missing, and does it matter how it went missing?</p>
+        <div id="s1-4" class="session-card">
+          <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
+            <span class="session-num">1.4</span>
+            <h4>Repetition and Loops: Automation as a Research Tool</h4>
+            <span class="session-toggle">▾</span>
           </div>
-          <h4 class="session-title">Topics Covered</h4>
-          <ul>
-            <li>What NaN means and how Python/pandas represents absence</li>
-            <li>Three mechanisms of missingness: MCAR, MAR, MNAR</li>
-            <li><code>df.isnull()</code>, <code>df.isnull().sum()</code>: quantifying missingness</li>
-            <li>Strategies: listwise deletion (<code>dropna</code>), column removal, mean/median imputation</li>
-            <li>When each strategy is defensible — and when it is not</li>
-            <li>Documenting what you did and why: the research audit trail</li>
-          </ul>
-          <h4 class="session-title">Classroom Activity</h4>
-          <ul>
-            <li>Students compare two datasets: one with randomly missing data, one with data missing only for highest-anxiety participants. Could you tell the difference by looking at the NaN pattern alone?</li>
-            <li>Apply three different missingness strategies to the same dataset and compare descriptive statistics across the three resulting versions</li>
-          </ul>
-          <em class="note">Ethical Touchpoint: Deciding how to handle missing data is a scientific decision, not a cleaning chore. Both imputation and deletion should be reported transparently, as each carries assumptions about the world.</em>
-        </div>
-      </div>
-
-      <div id="s2-4" class="session-card">
-        <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
-          <span class="session-num">2.4</span>
-          <h4>Descriptive Statistics from Scratch and from Libraries</h4>
-          <span class="session-toggle">▾</span>
-        </div>
-        <div class="session-body">
-          <div class="box box-mist"><div class="box-label">Section Overview</div>
-            <p>This session revisits descriptive statistics — mean, median, mode, variance, standard deviation — and builds them from scratch in Python before using the library versions. The goal is not to memorise formulas but to understand what each statistic is actually doing to the data.</p>
+          <div class="session-body">
+            <div class="box box-mist">
+              <div class="box-label">Section Overview</div>
+              <p>Loops are introduced as the answer to the question: "What if I need to do this for every participant?"
+                Students see that automation is not laziness — it is reproducibility.</p>
+            </div>
+            <h4 class="session-title">Topics Covered</h4>
+            <ul>
+              <li><code>for</code> loops over lists and ranges</li>
+              <li>Accumulators: building a running total or a collection</li>
+              <li><code>while</code> loops: iterating until a condition changes</li>
+              <li><code>break</code> and <code>continue</code>: controlling loop flow</li>
+              <li><code>enumerate()</code> for tracking position</li>
+              <li>Nested loops: brief introduction with a concrete example</li>
+            </ul>
+            <h4 class="session-title">Classroom Activity</h4>
+            <ul>
+              <li>Given a list of 20 raw test scores, students write a <code>for</code> loop to compute the total and
+                mean without using <code>sum()</code> or <code>len()</code> — building these from scratch with an
+                accumulator</li>
+              <li>Extension: loop over the scores again to flag any score more than 1.5 SDs from the mean</li>
+              <li>Discussion: why two passes? Could this be done in one pass? What does this tell us about the structure
+                of the computation?</li>
+            </ul>
           </div>
-          <h4 class="session-title">Topics Covered</h4>
-          <ul>
-            <li>Computing mean, median, and mode from a list using only base Python</li>
-            <li>Computing variance and standard deviation step by step: understanding the sum of squared deviations</li>
-            <li><code>sorted()</code> for median; mode as the most common value</li>
-            <li>Verifying results with numpy and pandas</li>
-            <li>Population vs. sample standard deviation (<code>ddof=0</code> vs <code>ddof=1</code>)</li>
-            <li>Percentiles and quartiles: what they tell us that the mean does not</li>
-          </ul>
-          <h4 class="session-title">Classroom Activity</h4>
-          <ul>
-            <li>Paired task: one student writes <code>compute_variance(data, population=True)</code>, their partner writes <code>compute_variance(data, population=False)</code>. They compare outputs and discuss when each is appropriate — reconnecting to the parameter vs. statistic distinction from the concurrent statistics course</li>
-            <li>Visual exploration: scatter plot of raw scores with a horizontal mean line and shaded SD region</li>
-          </ul>
         </div>
-      </div>
 
-      <div id="s2-5" class="session-card">
-        <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
-          <span class="session-num">2.5</span>
-          <h4>Visualisation as Understanding, Not Decoration</h4>
-          <span class="session-toggle">▾</span>
-        </div>
-        <div class="session-body">
-          <div class="box box-mist"><div class="box-label">Section Overview</div>
-            <p>Visualisation is introduced not as the last step in analysis but as an exploratory tool. Students produce histograms, box plots, and bar charts, spending significant time discussing what each plot reveals that a table of numbers does not — and what each conceals.</p>
+        <div id="s1-5" class="session-card">
+          <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
+            <span class="session-num">1.5</span>
+            <h4>Functions: Naming What You Mean</h4>
+            <span class="session-toggle">▾</span>
           </div>
-          <h4 class="session-title">Topics Covered</h4>
-          <ul>
-            <li>The matplotlib anatomy: figure, axes, plot elements</li>
-            <li>Histogram: choosing bin width and what that choice implies</li>
-            <li>Box plot: five-number summary as a visual, interpreting whiskers and outliers</li>
-            <li>Bar chart for categorical data: frequency vs. proportion</li>
-            <li>Overlaying plots: comparing two distributions visually</li>
-            <li>Titles, labels, legends: what every plot must communicate</li>
-          </ul>
-          <h4 class="session-title">Classroom Activity</h4>
-          <ul>
-            <li>Students generate three visualisations of the same variable: narrow-bin histogram, wide-bin histogram, and box plot — then write a short reflection on what each emphasises and what it obscures</li>
-            <li>Group critique: pairs swap plots and give feedback on whether the visualisation would be clear to a first-time reader</li>
-          </ul>
-          <em class="note">Connection to R: Students have already made plots in R using ggplot2-style thinking. The transition is to understand the underlying figure-and-axes model that both R and Python use. The aesthetic choices are different; the conceptual model is structurally similar.</em>
-        </div>
-      </div>
-
-      <h3 class="subsection">Unit 2 Section Summary</h3>
-      <table class="session-table">
-        <thead><tr><th>Section</th><th>Topic</th><th>Key Activities</th><th>Deliverable</th></tr></thead>
-        <tbody>
-          <tr><td>2.1</td><td>Lists and Dictionaries</td><td>Paper participant records, list vs dict comparison</td><td>Participant collection in both formats</td></tr>
-          <tr><td>2.2</td><td>Pandas DataFrames</td><td>Dataset inspection checklist exercise</td><td>Pre-analysis inspection report</td></tr>
-          <tr><td>2.3</td><td>Missing Data</td><td>MCAR vs MNAR comparison activity</td><td>Missingness strategy comparison table</td></tr>
-          <tr><td>2.4</td><td>Descriptive Statistics</td><td>From-scratch implementation, library verification</td><td>compute_variance() function with both modes</td></tr>
-          <tr><td>2.5</td><td>Visualisation</td><td>Three-plot reflection, peer critique</td><td>Annotated plot set with written reflection</td></tr>
-        </tbody>
-      </table>
-    </section>
-
-    <!-- ══ UNIT 3 ══ -->
-    <section id="unit3">
-      <div class="unit-banner">
-        <div class="unit-number">Unit 3 of 4</div>
-        <h2>Identifying patterns and evidence in data</h2>
-        <div class="unit-question">"How do I find signal within noise?"</div>
-        <div class="unit-meta">
-          <span>8 hours</span>
-          <span>CO1, CO4, CO5</span>
-        </div>
-      </div>
-      <p>This unit is where Python becomes a thinking tool rather than just a computing tool. Students use their conceptual vocabulary to investigate relationships and test ideas. The parallel statistics course is running live during this unit, so students will often encounter the same concept from two directions in the same week. This is intentional.</p>
-
-      <div id="s3-1" class="session-card">
-        <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
-          <span class="session-num">3.1</span>
-          <h4>Probability and Simulation: Building Intuition for the p-Value</h4>
-          <span class="session-toggle">▾</span>
-        </div>
-        <div class="session-body">
-          <div class="box box-mist"><div class="box-label">Section Overview</div>
-            <p>Before any hypothesis test is coded, this session uses simulation to build intuition for what a p-value actually represents. Students generate data under a null hypothesis thousands of times and observe how often they see a result as extreme as their observed one.</p>
+          <div class="session-body">
+            <div class="box box-mist">
+              <div class="box-label">Section Overview</div>
+              <p>Functions are presented as a way of giving a name to a process — exactly as a researcher names a
+                construct. Once defined, a function can be applied anywhere, ensuring consistency.</p>
+            </div>
+            <h4 class="session-title">Topics Covered</h4>
+            <ul>
+              <li><code>def</code> syntax, parameters, and <code>return</code></li>
+              <li>The difference between printing and returning</li>
+              <li>Default parameter values</li>
+              <li>Docstrings: documenting what a function does, not how</li>
+              <li>Calling a function vs. defining it</li>
+              <li>Brief preview of the Python Standard Library as 'functions other people wrote'</li>
+            </ul>
+            <h4 class="session-title">Classroom Activity</h4>
+            <ul>
+              <li>Students refactor work from Sessions 1.2–1.4 into a small library of functions:
+                <code>compute_mean(scores)</code>, <code>compute_sd(scores)</code>,
+                <code>classify_severity(score)</code>, <code>flag_outliers(scores, threshold)</code></li>
+              <li>Pair exercise: swap code with a partner. Can you understand what each function does from its name and
+                docstring alone?</li>
+            </ul>
+            <em class="note">Unit 1 Closing Reflection: Before this unit, most students experienced programming as
+              typing commands. After this unit, they should experience it as designing a sequence of clearly named,
+              intentional steps.</em>
           </div>
-          <h4 class="session-title">Topics Covered</h4>
-          <ul>
-            <li>Random number generation: <code>random.random()</code>, <code>random.choice()</code>, <code>random.gauss()</code></li>
-            <li>Simulating coin flips, dice rolls, and then simulated experiments</li>
-            <li>The sampling distribution as an empirical object, not just a theoretical one</li>
-            <li>Counting how many simulations exceed an observed value: an intuitive p-value</li>
-            <li>Why 5,000 simulations give a different answer from 50</li>
-            <li>Connecting the simulation result to the formal p-value and alpha concepts</li>
-          </ul>
-          <h4 class="session-title">Classroom Activity</h4>
-          <ul>
-            <li>Students simulate: "If sleep quality has no effect on memory test scores (null hypothesis), how often would we see a difference as large as 8 points by chance?" They count the proportion of simulated differences ≥ 8 and compare to alpha = 0.05</li>
-            <li>Discussion: what changes if we set alpha to 0.01? What changes if our sample was larger?</li>
-          </ul>
-          <em class="note">Statistical Bridge: This simulation gives students a visceral sense of Type I and Type II errors — a Type I error is what happens when your 'extreme' result is actually one of the 5% of noise outcomes.</em>
         </div>
-      </div>
 
-      <div id="s3-2" class="session-card">
-        <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
-          <span class="session-num">3.2</span>
-          <h4>The t-Test: A Case Study in Implementing an Inferential Test</h4>
-          <span class="session-toggle">▾</span>
-        </div>
-        <div class="session-body">
-          <div class="box box-mist"><div class="box-label">Section Overview</div>
-            <p>Rather than simply calling <code>scipy.stats.ttest_ind()</code>, students implement an independent samples t-test step by step. The library function is used at the end — for verification, not as the primary tool.</p>
+        <h3 class="subsection">Unit 1 Section Summary</h3>
+        <table class="session-table">
+          <thead>
+            <tr>
+              <th>Section</th>
+              <th>Topic</th>
+              <th>Key Activities</th>
+              <th>Deliverable</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1.1</td>
+              <td>Algorithms &amp; Python Environment</td>
+              <td>Unplugged algorithm design, REPL exploration</td>
+              <td>Written algorithm for a scoring task</td>
+            </tr>
+            <tr>
+              <td>1.2</td>
+              <td>Variables and Data Types</td>
+              <td>Dataset card exercise, live coding</td>
+              <td>Typed variable annotations for a dataset</td>
+            </tr>
+            <tr>
+              <td>1.3</td>
+              <td>Conditions and Classification</td>
+              <td>PHQ-9 classifier implementation</td>
+              <td>Working if/elif/else classifier</td>
+            </tr>
+            <tr>
+              <td>1.4</td>
+              <td>Loops and Automation</td>
+              <td>Score processing with accumulators</td>
+              <td>Mean and outlier-flagging script</td>
+            </tr>
+            <tr>
+              <td>1.5</td>
+              <td>Functions and Abstraction</td>
+              <td>Refactoring, peer code reading</td>
+              <td>Documented function library</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ══ UNIT 2 ══ -->
+      <section id="unit2">
+        <div class="unit-banner">
+          <div class="unit-number">Unit 2 of 4</div>
+          <h2>Understand and manipulate data structures</h2>
+          <div class="unit-question">"How do I represent and explore what I have collected?"</div>
+          <div class="unit-meta">
+            <span>6 hours</span>
+            <span>CO2, CO3, CO4</span>
           </div>
-          <h4 class="session-title">Topics Covered</h4>
-          <ul>
-            <li>Revisiting the hypothesis structure: null, alternate, one-tailed, two-tailed</li>
-            <li>The logic of the t-statistic: how different are the means, relative to how different we would expect by chance?</li>
-            <li>Step-by-step implementation: group means, group variances, pooled standard error, t-statistic</li>
-            <li>Degrees of freedom: what they count and why they matter</li>
-            <li>Verifying the manual result with <code>scipy.stats.ttest_ind()</code></li>
-            <li>Effect size: why statistical significance is not the same as practical significance</li>
-          </ul>
-          <h4 class="session-title">Classroom Activity</h4>
-          <ul>
-            <li>Guided worksheet takes students through each step of the t-test computation; at each step they are asked: what would this number tell us if we stopped here?</li>
-            <li>Reflection: the library function returns the same numbers in one line. What do we lose by only ever using the library?</li>
-          </ul>
-          <em class="note">On the Paired t-Test: The paired t-test is introduced as a natural extension — instead of comparing two groups, we compare each participant to themselves across time, reducing to a test of whether the mean difference score is different from zero.</em>
         </div>
-      </div>
+        <p>Before any analysis can be trusted, the data must be understood. This unit addresses a truth that is often
+          glossed over in methods training: real datasets are messy, and the decisions made during cleaning are
+          analytical decisions with consequences.</p>
 
-      <div id="s3-3" class="session-card">
-        <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
-          <span class="session-num">3.3</span>
-          <h4>Correlation: Measuring the Direction and Strength of Relationships</h4>
-          <span class="session-toggle">▾</span>
-        </div>
-        <div class="session-body">
-          <div class="box box-mist"><div class="box-label">Section Overview</div>
-            <p>Correlation is presented as a question about geometry as much as statistics: do these two variables move together? The session builds Pearson's r from its components before computing it with a library. Spearman's rho is introduced as what happens when we care about rank rather than magnitude.</p>
+        <div id="s2-1" class="session-card">
+          <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
+            <span class="session-num">2.1</span>
+            <h4>Collections: Lists, Dictionaries, and the Shape of Data</h4>
+            <span class="session-toggle">▾</span>
           </div>
-          <h4 class="session-title">Topics Covered</h4>
-          <ul>
-            <li>Covariance: the numerator of Pearson's r and what it captures</li>
-            <li>Why r is bounded between -1 and +1: the normalising role of standard deviations</li>
-            <li>Computing Pearson's r step by step, then with <code>numpy.corrcoef()</code></li>
-            <li>Spearman's rho: computing ranks with <code>scipy.stats.rankdata()</code>, then correlating the ranks</li>
-            <li>When to use each: normality, outliers, and whether rank or magnitude is meaningful</li>
-            <li>The correlation matrix: representing many relationships at once</li>
-          </ul>
-          <h4 class="session-title">Classroom Activity</h4>
-          <ul>
-            <li>Students compute both Pearson's r and Spearman's rho for the same two variables in a dataset containing strong outliers, then discuss: which better represents the true relationship?</li>
-            <li>Scatter plot with correlation coefficient annotated: students produce this for three pairs of variables and rank them by strength, then discuss whether strong correlation implies importance</li>
-          </ul>
-        </div>
-      </div>
-
-      <div id="s3-4" class="session-card">
-        <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
-          <span class="session-num">3.4</span>
-          <h4>Correlation, Causation, and Confounds: Critical Thinking with Code</h4>
-          <span class="session-toggle">▾</span>
-        </div>
-        <div class="session-body">
-          <div class="box box-mist"><div class="box-label">Section Overview</div>
-            <p>This session slows down to think about what a correlation coefficient actually means in the real world. Using datasets where strong correlations are artefacts of confounding variables, students practise the critical evaluation skills that separate a researcher from someone who runs functions on data.</p>
+          <div class="session-body">
+            <div class="box box-mist">
+              <div class="box-label">Section Overview</div>
+              <p>Students now confront the need to work with many values at once. This session introduces lists and
+                dictionaries as the two fundamental collection types, and asks students to think carefully about which
+                is the right choice for a given representation task.</p>
+            </div>
+            <h4 class="session-title">Topics Covered</h4>
+            <ul>
+              <li>Lists: ordered, indexed, mutable — for sequences of same-kind data</li>
+              <li>List operations: append, remove, slicing, indexing, length</li>
+              <li>Dictionaries: key-value pairs — for structured records</li>
+              <li>Choosing between lists and dictionaries: a design decision, not a syntax question</li>
+              <li>Lists of dictionaries as a natural model for a dataset of participants</li>
+              <li>Tuples: briefly — when immutability matters</li>
+            </ul>
+            <h4 class="session-title">Classroom Activity</h4>
+            <ul>
+              <li>Students receive a paper participant record and represent it first as a list, then as a dictionary. A
+                second participant is added — discussion follows about which representation scales more naturally</li>
+              <li>Guided coding: building a list of participant dictionaries and writing a loop to extract all ages</li>
+            </ul>
+            <em class="note">Conceptual Bridge: In R, the dataframe was given to students from the start. Here, they are
+              building up to it. Understanding why a dataframe is useful requires understanding what it replaces.</em>
           </div>
-          <h4 class="session-title">Topics Covered</h4>
-          <ul>
-            <li>Classic spurious correlations and the third-variable problem</li>
-            <li>The concept of a confounding variable: what is the third thing?</li>
-            <li>Partial correlation: holding a third variable constant — conceptual introduction</li>
-            <li>Directionality: when A correlates with B, could B cause A?</li>
-            <li>The ecological fallacy: correlations at the group level may not apply to individuals</li>
-            <li>Implications for psychological research: media misinterpretation of correlation findings</li>
-          </ul>
-          <h4 class="session-title">Classroom Activity</h4>
-          <ul>
-            <li>Students identify a plausible confound in a dataset with a strong correlation, subset the data by that confound, and compute the correlation separately within each subset</li>
-            <li>Writing exercise: write a single paragraph a journalist might write about the finding, then a corrected version written by a researcher</li>
-          </ul>
         </div>
-      </div>
 
-      <div id="s3-5" class="session-card">
-        <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
-          <span class="session-num">3.5</span>
-          <h4>Introduction to Regression and Chi-Square: Prediction and Independence</h4>
-          <span class="session-toggle">▾</span>
-        </div>
-        <div class="session-body">
-          <div class="box box-mist"><div class="box-label">Section Overview</div>
-            <p>Simple linear regression as a natural extension of correlation — moving from describing a relationship to predicting a value — and chi-square as the tool for asking whether two categorical variables are related. Both are implemented at least partially from scratch.</p>
+        <div id="s2-2" class="session-card">
+          <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
+            <span class="session-num">2.2</span>
+            <h4>The Pandas DataFrame: Data as a Table</h4>
+            <span class="session-toggle">▾</span>
           </div>
-          <h4 class="session-title">Topics Covered</h4>
-          <ul>
-            <li>From correlation to regression: the line of best fit as a predictive model</li>
-            <li>The slope and intercept: what each means in the context of the variables</li>
-            <li>Residuals: the difference between prediction and reality</li>
-            <li>R-squared: what proportion of variance in Y is explained by X?</li>
-            <li>Chi-square: testing whether the distribution of one categorical variable is independent of another</li>
-            <li>Observed vs. expected frequencies; computing chi-square manually in Python</li>
-          </ul>
-          <h4 class="session-title">Classroom Activity</h4>
-          <ul>
-            <li>Regression: students implement the OLS formula for slope and intercept manually, plot the resulting line over a scatter plot, then use sklearn to verify</li>
-            <li>Chi-square: given a contingency table (gender × diagnosis), students compute expected frequencies and chi-square without scipy, then verify with it</li>
-          </ul>
-          <em class="note">Concurrent Statistics Link: Both regression and chi-square are being introduced simultaneously in the statistics course. This session gives students a concrete computational model that will deepen their understanding of the formal treatment they are receiving in parallel.</em>
-        </div>
-      </div>
-
-      <h3 class="subsection">Unit 3 Section Summary</h3>
-      <table class="session-table">
-        <thead><tr><th>Section</th><th>Topic</th><th>Key Activities</th><th>Deliverable</th></tr></thead>
-        <tbody>
-          <tr><td>3.1</td><td>Probability and Simulation</td><td>Null hypothesis simulation exercise</td><td>Simulation script with p-value estimate</td></tr>
-          <tr><td>3.2</td><td>The t-Test</td><td>Step-by-step guided implementation</td><td>Annotated t-test worksheet and script</td></tr>
-          <tr><td>3.3</td><td>Correlation</td><td>Pearson vs Spearman comparison, matrix</td><td>Correlation analysis with plots</td></tr>
-          <tr><td>3.4</td><td>Causation and Confounds</td><td>Confound identification, journalist vs researcher writing</td><td>Short critical evaluation paragraph</td></tr>
-          <tr><td>3.5</td><td>Regression and Chi-Square</td><td>OLS implementation, contingency table exercise</td><td>Manual and library outputs compared</td></tr>
-        </tbody>
-      </table>
-    </section>
-
-    <!-- ══ UNIT 4 ══ -->
-    <section id="unit4">
-      <div class="unit-banner">
-        <div class="unit-number">Unit 4 of 4</div>
-        <h2>Responsible communication with programming</h2>
-        <div class="unit-question">"How do I tell a story that is honest and clear?"</div>
-        <div class="unit-meta">
-          <span>6 hours</span>
-          <span>CO5, CO6</span>
-        </div>
-      </div>
-      <p>The final unit asks: now that you can compute things, can you communicate them honestly? This unit addresses reproducibility, visualisation ethics, writing for non-technical audiences, and the skills of reflection and synthesis. The capstone project draws on everything from the preceding three units.</p>
-
-      <div id="s4-1" class="session-card">
-        <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
-          <span class="session-num">4.1</span>
-          <h4>Reproducibility: Writing Code That Others Can Run</h4>
-          <span class="session-toggle">▾</span>
-        </div>
-        <div class="session-body">
-          <div class="box box-mist"><div class="box-label">Section Overview</div>
-            <p>Students discover how quickly an undocumented script becomes opaque — even to its own author — and learn the practices that make code a reproducible scientific artifact.</p>
+          <div class="session-body">
+            <div class="box box-mist">
+              <div class="box-label">Section Overview</div>
+              <p>Pandas is introduced not as a library to be memorised but as a natural extension of what students just
+                built. The session focuses on loading, inspecting, and understanding a dataset before touching it.</p>
+            </div>
+            <h4 class="session-title">Topics Covered</h4>
+            <ul>
+              <li><code>import pandas as pd</code>: the import statement and the alias convention</li>
+              <li><code>pd.read_csv()</code>: loading real data</li>
+              <li><code>df.head()</code>, <code>df.tail()</code>, <code>df.shape</code>, <code>df.dtypes</code>,
+                <code>df.info()</code></li>
+              <li>Accessing columns and rows: <code>df['column']</code>, <code>df.iloc[]</code>, <code>df.loc[]</code>
+              </li>
+              <li>Basic filtering: <code>df[df['column'] &gt; value]</code></li>
+              <li><code>df.describe()</code>: descriptive statistics at a glance — and why glance is not enough</li>
+            </ul>
+            <h4 class="session-title">Classroom Activity</h4>
+            <ul>
+              <li>Students load a psychology dataset and answer a checklist of questions before performing any analysis:
+                How many participants? What are the data types? Are there obvious outliers? Are there missing values?
+              </li>
+              <li>Discussion: what would happen if we skipped these steps and ran an analysis immediately?</li>
+            </ul>
           </div>
-          <h4 class="session-title">Topics Covered</h4>
-          <ul>
-            <li>Code comments: when to comment and what not to comment</li>
-            <li>Docstrings: documenting functions for others</li>
-            <li>Variable naming as documentation: why <code>score_before_training</code> &gt; <code>s1</code></li>
-            <li>The analysis pipeline as a sequence: import, inspect, clean, describe, analyse, visualise, interpret</li>
-            <li>Jupyter Notebooks as a format for literate programming</li>
-            <li>Setting a random seed for reproducibility in simulations</li>
-            <li>The replication crisis in psychology: a brief contextual discussion</li>
-          </ul>
-          <h4 class="session-title">Classroom Activity</h4>
-          <ul>
-            <li>Students receive a deliberately poorly documented script that performs a correct analysis. They reconstruct what it does, add appropriate comments and docstrings, rename variables, and reorganise it — without changing any analytical logic</li>
-            <li>Pair exercise: one student runs the partner's refactored script and records every point of confusion. These confusions become the agenda for a short revision</li>
-          </ul>
         </div>
-      </div>
 
-      <div id="s4-2" class="session-card">
-        <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
-          <span class="session-num">4.2</span>
-          <h4>Visualisation Ethics: Honesty in Charts</h4>
-          <span class="session-toggle">▾</span>
-        </div>
-        <div class="session-body">
-          <div class="box box-mist"><div class="box-label">Section Overview</div>
-            <p>Students build problematic visualisations deliberately, understand why they mislead, and then correct them. The goal is critical literacy as much as technical skill.</p>
+        <div id="s2-3" class="session-card">
+          <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
+            <span class="session-num">2.3</span>
+            <h4>Missing Data: The Values That Are Not There</h4>
+            <span class="session-toggle">▾</span>
           </div>
-          <h4 class="session-title">Topics Covered</h4>
-          <ul>
-            <li>Truncated y-axes: making small differences look large</li>
-            <li>Cherry-picking time windows in a time-series plot</li>
-            <li>Inappropriate chart types: 3D pie charts, dual-axis plots with arbitrary scales</li>
-            <li>Missing error bars or confidence intervals</li>
-            <li>Colour choices that mislead: gradients implying order where there is none</li>
-            <li>APA and ethical reporting standards for figures</li>
-          </ul>
-          <h4 class="session-title">Classroom Activity</h4>
-          <ul>
-            <li>'Spot the Manipulation': students are shown six published-style charts containing at least one misleading choice each, and must identify the problem and suggest a correction</li>
-            <li>Fix it: students recreate two of these charts correctly in Python, writing a one-sentence APA-style caption for each</li>
-          </ul>
-          <em class="note">A misleading visualisation is not always the result of bad intent. Often it reflects a failure to think from the reader's perspective, or an uncritical acceptance of software defaults.</em>
+          <div class="session-body">
+            <div class="box box-mist">
+              <div class="box-label">Section Overview</div>
+              <p>Missing data is one of the most consequential and most neglected topics in quantitative psychology
+                training. This session treats it as a conceptual problem first — why is data missing, and does it matter
+                how it went missing?</p>
+            </div>
+            <h4 class="session-title">Topics Covered</h4>
+            <ul>
+              <li>What NaN means and how Python/pandas represents absence</li>
+              <li>Three mechanisms of missingness: MCAR, MAR, MNAR</li>
+              <li><code>df.isnull()</code>, <code>df.isnull().sum()</code>: quantifying missingness</li>
+              <li>Strategies: listwise deletion (<code>dropna</code>), column removal, mean/median imputation</li>
+              <li>When each strategy is defensible — and when it is not</li>
+              <li>Documenting what you did and why: the research audit trail</li>
+            </ul>
+            <h4 class="session-title">Classroom Activity</h4>
+            <ul>
+              <li>Students compare two datasets: one with randomly missing data, one with data missing only for
+                highest-anxiety participants. Could you tell the difference by looking at the NaN pattern alone?</li>
+              <li>Apply three different missingness strategies to the same dataset and compare descriptive statistics
+                across the three resulting versions</li>
+            </ul>
+            <em class="note">Ethical Touchpoint: Deciding how to handle missing data is a scientific decision, not a
+              cleaning chore. Both imputation and deletion should be reported transparently, as each carries assumptions
+              about the world.</em>
+          </div>
         </div>
-      </div>
 
-      <div id="s4-3" class="session-card">
-        <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
-          <span class="session-num">4.3</span>
-          <h4>Writing for Two Audiences: Researchers and Non-Researchers</h4>
-          <span class="session-toggle">▾</span>
-        </div>
-        <div class="session-body">
-          <div class="box box-mist"><div class="box-label">Section Overview</div>
-            <p>Students take a Python-generated analysis and write two interpretations of the same result: one for a peer reviewer, and one for a general reader. The exercise reveals how much translation is required and what is lost or gained in each version.</p>
+        <div id="s2-4" class="session-card">
+          <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
+            <span class="session-num">2.4</span>
+            <h4>Descriptive Statistics from Scratch and from Libraries</h4>
+            <span class="session-toggle">▾</span>
           </div>
-          <h4 class="session-title">Topics Covered</h4>
-          <ul>
-            <li>What a results section should contain: statistic, df, p-value, effect size, direction</li>
-            <li>Translating statistical language for non-specialist audiences</li>
-            <li>Common misinterpretations: what a p-value is not, what 'no significant difference' does not mean</li>
-            <li>Reporting limitations: what the analysis cannot tell us</li>
-            <li>Connecting to ethical data reporting standards from the R programming course</li>
-          </ul>
-          <h4 class="session-title">Classroom Activity</h4>
-          <ul>
-            <li>Given output of a correlation analysis (r = 0.43, p = 0.02, n = 36), students write: (a) a formal APA-style results paragraph, and (b) a three-sentence plain-language explanation for a school newsletter</li>
-            <li>Pairs read each other's versions and discuss where the technical version is inaccessible and where the plain-language version has been oversimplified</li>
-          </ul>
+          <div class="session-body">
+            <div class="box box-mist">
+              <div class="box-label">Section Overview</div>
+              <p>This session revisits descriptive statistics — mean, median, mode, variance, standard deviation — and
+                builds them from scratch in Python before using the library versions. The goal is not to memorise
+                formulas but to understand what each statistic is actually doing to the data.</p>
+            </div>
+            <h4 class="session-title">Topics Covered</h4>
+            <ul>
+              <li>Computing mean, median, and mode from a list using only base Python</li>
+              <li>Computing variance and standard deviation step by step: understanding the sum of squared deviations
+              </li>
+              <li><code>sorted()</code> for median; mode as the most common value</li>
+              <li>Verifying results with numpy and pandas</li>
+              <li>Population vs. sample standard deviation (<code>ddof=0</code> vs <code>ddof=1</code>)</li>
+              <li>Percentiles and quartiles: what they tell us that the mean does not</li>
+            </ul>
+            <h4 class="session-title">Classroom Activity</h4>
+            <ul>
+              <li>Paired task: one student writes <code>compute_variance(data, population=True)</code>, their partner
+                writes <code>compute_variance(data, population=False)</code>. They compare outputs and discuss when each
+                is appropriate — reconnecting to the parameter vs. statistic distinction from the concurrent statistics
+                course</li>
+              <li>Visual exploration: scatter plot of raw scores with a horizontal mean line and shaded SD region</li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <div id="s4-4" class="session-card">
-        <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
-          <span class="session-num">4.4</span>
-          <h4>End-to-End Pipeline: Applying the Full Workflow</h4>
-          <span class="session-toggle">▾</span>
-        </div>
-        <div class="session-body">
-          <div class="box box-mist"><div class="box-label">Section Overview</div>
-            <p>A supervised capstone exercise. Students receive a dataset they have not seen before and a brief research question, and must apply the complete analytical pipeline working individually or in pairs.</p>
+        <div id="s2-5" class="session-card">
+          <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
+            <span class="session-num">2.5</span>
+            <h4>Visualisation as Understanding, Not Decoration</h4>
+            <span class="session-toggle">▾</span>
           </div>
-          <h4 class="session-title">Pipeline Steps</h4>
-          <ol>
-            <li>Load and inspect the dataset: shape, types, missing values</li>
-            <li>Clean: address issues found in step 1; document all decisions</li>
-            <li>Describe: compute and display relevant descriptive statistics</li>
-            <li>Visualise the distributions of key variables</li>
-            <li>Formulate and test a hypothesis appropriate to the research question</li>
-            <li>Visualise the relationship of interest</li>
-            <li>Interpret: what does the analysis suggest? What can it not tell us?</li>
-            <li>Reflect: what would you do differently with more time or more data?</li>
-          </ol>
-          <em class="note">Instructor Role: The instructor does not answer "how do I code X?" questions in this session. Instead, questions are redirected: "What are you trying to find out at this step? What would the answer look like?" This scaffolds independent problem-solving.</em>
+          <div class="session-body">
+            <div class="box box-mist">
+              <div class="box-label">Section Overview</div>
+              <p>Visualisation is introduced not as the last step in analysis but as an exploratory tool. Students
+                produce histograms, box plots, and bar charts, spending significant time discussing what each plot
+                reveals that a table of numbers does not — and what each conceals.</p>
+            </div>
+            <h4 class="session-title">Topics Covered</h4>
+            <ul>
+              <li>The matplotlib anatomy: figure, axes, plot elements</li>
+              <li>Histogram: choosing bin width and what that choice implies</li>
+              <li>Box plot: five-number summary as a visual, interpreting whiskers and outliers</li>
+              <li>Bar chart for categorical data: frequency vs. proportion</li>
+              <li>Overlaying plots: comparing two distributions visually</li>
+              <li>Titles, labels, legends: what every plot must communicate</li>
+            </ul>
+            <h4 class="session-title">Classroom Activity</h4>
+            <ul>
+              <li>Students generate three visualisations of the same variable: narrow-bin histogram, wide-bin histogram,
+                and box plot — then write a short reflection on what each emphasises and what it obscures</li>
+              <li>Group critique: pairs swap plots and give feedback on whether the visualisation would be clear to a
+                first-time reader</li>
+            </ul>
+            <em class="note">Connection to R: Students have already made plots in R using ggplot2-style thinking. The
+              transition is to understand the underlying figure-and-axes model that both R and Python use. The aesthetic
+              choices are different; the conceptual model is structurally similar.</em>
+          </div>
         </div>
-      </div>
 
-      <div id="s4-5" class="session-card">
-        <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
-          <span class="session-num">4.5</span>
-          <h4>Reflection and the Bigger Picture</h4>
-          <span class="session-toggle">▾</span>
-        </div>
-        <div class="session-body">
-          <div class="box box-mist"><div class="box-label">Section Overview</div>
-            <p>The final session steps back from code entirely. Students present their pipeline exercise briefly, share one thing that surprised them, and engage in a structured reflection on how computational thinking has changed how they think about statistics, measurement, and research.</p>
+        <h3 class="subsection">Unit 2 Section Summary</h3>
+        <table class="session-table">
+          <thead>
+            <tr>
+              <th>Section</th>
+              <th>Topic</th>
+              <th>Key Activities</th>
+              <th>Deliverable</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2.1</td>
+              <td>Lists and Dictionaries</td>
+              <td>Paper participant records, list vs dict comparison</td>
+              <td>Participant collection in both formats</td>
+            </tr>
+            <tr>
+              <td>2.2</td>
+              <td>Pandas DataFrames</td>
+              <td>Dataset inspection checklist exercise</td>
+              <td>Pre-analysis inspection report</td>
+            </tr>
+            <tr>
+              <td>2.3</td>
+              <td>Missing Data</td>
+              <td>MCAR vs MNAR comparison activity</td>
+              <td>Missingness strategy comparison table</td>
+            </tr>
+            <tr>
+              <td>2.4</td>
+              <td>Descriptive Statistics</td>
+              <td>From-scratch implementation, library verification</td>
+              <td>compute_variance() function with both modes</td>
+            </tr>
+            <tr>
+              <td>2.5</td>
+              <td>Visualisation</td>
+              <td>Three-plot reflection, peer critique</td>
+              <td>Annotated plot set with written reflection</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ══ UNIT 3 ══ -->
+      <section id="unit3">
+        <div class="unit-banner">
+          <div class="unit-number">Unit 3 of 4</div>
+          <h2>Identifying patterns and evidence in data</h2>
+          <div class="unit-question">"How do I find signal within noise?"</div>
+          <div class="unit-meta">
+            <span>8 hours</span>
+            <span>CO1, CO4, CO5</span>
           </div>
-          <h4 class="session-title">Structure of the Section</h4>
-          <ul>
-            <li>Brief presentations: each student or pair shares one visualisation and one finding from Section 4.4 (20 minutes total)</li>
-            <li>Structured written reflection responding to the prompts below</li>
-            <li>Whole-group discussion: what concepts from statistics do you now understand differently?</li>
-            <li>Looking ahead: brief introduction to what Python can do that this course has not covered — NLP, web scraping, machine learning — as motivation for continued learning</li>
-          </ul>
-          <div class="box box-gold">
-            <div class="box-label">Reflection Prompts</div>
+        </div>
+        <p>This unit is where Python becomes a thinking tool rather than just a computing tool. Students use their
+          conceptual vocabulary to investigate relationships and test ideas. The parallel statistics course is running
+          live during this unit, so students will often encounter the same concept from two directions in the same week.
+          This is intentional.</p>
+
+        <div id="s3-1" class="session-card">
+          <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
+            <span class="session-num">3.1</span>
+            <h4>Probability and Simulation: Building Intuition for the p-Value</h4>
+            <span class="session-toggle">▾</span>
+          </div>
+          <div class="session-body">
+            <div class="box box-mist">
+              <div class="box-label">Section Overview</div>
+              <p>Before any hypothesis test is coded, this session uses simulation to build intuition for what a p-value
+                actually represents. Students generate data under a null hypothesis thousands of times and observe how
+                often they see a result as extreme as their observed one.</p>
+            </div>
+            <h4 class="session-title">Topics Covered</h4>
+            <ul>
+              <li>Random number generation: <code>random.random()</code>, <code>random.choice()</code>,
+                <code>random.gauss()</code></li>
+              <li>Simulating coin flips, dice rolls, and then simulated experiments</li>
+              <li>The sampling distribution as an empirical object, not just a theoretical one</li>
+              <li>Counting how many simulations exceed an observed value: an intuitive p-value</li>
+              <li>Why 5,000 simulations give a different answer from 50</li>
+              <li>Connecting the simulation result to the formal p-value and alpha concepts</li>
+            </ul>
+            <h4 class="session-title">Classroom Activity</h4>
+            <ul>
+              <li>Students simulate: "If sleep quality has no effect on memory test scores (null hypothesis), how often
+                would we see a difference as large as 8 points by chance?" They count the proportion of simulated
+                differences ≥ 8 and compare to alpha = 0.05</li>
+              <li>Discussion: what changes if we set alpha to 0.01? What changes if our sample was larger?</li>
+            </ul>
+            <em class="note">Statistical Bridge: This simulation gives students a visceral sense of Type I and Type II
+              errors — a Type I error is what happens when your 'extreme' result is actually one of the 5% of noise
+              outcomes.</em>
+          </div>
+        </div>
+
+        <div id="s3-2" class="session-card">
+          <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
+            <span class="session-num">3.2</span>
+            <h4>The t-Test: A Case Study in Implementing an Inferential Test</h4>
+            <span class="session-toggle">▾</span>
+          </div>
+          <div class="session-body">
+            <div class="box box-mist">
+              <div class="box-label">Section Overview</div>
+              <p>Rather than simply calling <code>scipy.stats.ttest_ind()</code>, students implement an independent
+                samples t-test step by step. The library function is used at the end — for verification, not as the
+                primary tool.</p>
+            </div>
+            <h4 class="session-title">Topics Covered</h4>
+            <ul>
+              <li>Revisiting the hypothesis structure: null, alternate, one-tailed, two-tailed</li>
+              <li>The logic of the t-statistic: how different are the means, relative to how different we would expect
+                by chance?</li>
+              <li>Step-by-step implementation: group means, group variances, pooled standard error, t-statistic</li>
+              <li>Degrees of freedom: what they count and why they matter</li>
+              <li>Verifying the manual result with <code>scipy.stats.ttest_ind()</code></li>
+              <li>Effect size: why statistical significance is not the same as practical significance</li>
+            </ul>
+            <h4 class="session-title">Classroom Activity</h4>
+            <ul>
+              <li>Guided worksheet takes students through each step of the t-test computation; at each step they are
+                asked: what would this number tell us if we stopped here?</li>
+              <li>Reflection: the library function returns the same numbers in one line. What do we lose by only ever
+                using the library?</li>
+            </ul>
+            <em class="note">On the Paired t-Test: The paired t-test is introduced as a natural extension — instead of
+              comparing two groups, we compare each participant to themselves across time, reducing to a test of whether
+              the mean difference score is different from zero.</em>
+          </div>
+        </div>
+
+        <div id="s3-3" class="session-card">
+          <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
+            <span class="session-num">3.3</span>
+            <h4>Correlation: Measuring the Direction and Strength of Relationships</h4>
+            <span class="session-toggle">▾</span>
+          </div>
+          <div class="session-body">
+            <div class="box box-mist">
+              <div class="box-label">Section Overview</div>
+              <p>Correlation is presented as a question about geometry as much as statistics: do these two variables
+                move together? The session builds Pearson's r from its components before computing it with a library.
+                Spearman's rho is introduced as what happens when we care about rank rather than magnitude.</p>
+            </div>
+            <h4 class="session-title">Topics Covered</h4>
+            <ul>
+              <li>Covariance: the numerator of Pearson's r and what it captures</li>
+              <li>Why r is bounded between -1 and +1: the normalising role of standard deviations</li>
+              <li>Computing Pearson's r step by step, then with <code>numpy.corrcoef()</code></li>
+              <li>Spearman's rho: computing ranks with <code>scipy.stats.rankdata()</code>, then correlating the ranks
+              </li>
+              <li>When to use each: normality, outliers, and whether rank or magnitude is meaningful</li>
+              <li>The correlation matrix: representing many relationships at once</li>
+            </ul>
+            <h4 class="session-title">Classroom Activity</h4>
+            <ul>
+              <li>Students compute both Pearson's r and Spearman's rho for the same two variables in a dataset
+                containing strong outliers, then discuss: which better represents the true relationship?</li>
+              <li>Scatter plot with correlation coefficient annotated: students produce this for three pairs of
+                variables and rank them by strength, then discuss whether strong correlation implies importance</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="s3-4" class="session-card">
+          <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
+            <span class="session-num">3.4</span>
+            <h4>Correlation, Causation, and Confounds: Critical Thinking with Code</h4>
+            <span class="session-toggle">▾</span>
+          </div>
+          <div class="session-body">
+            <div class="box box-mist">
+              <div class="box-label">Section Overview</div>
+              <p>This session slows down to think about what a correlation coefficient actually means in the real world.
+                Using datasets where strong correlations are artefacts of confounding variables, students practise the
+                critical evaluation skills that separate a researcher from someone who runs functions on data.</p>
+            </div>
+            <h4 class="session-title">Topics Covered</h4>
+            <ul>
+              <li>Classic spurious correlations and the third-variable problem</li>
+              <li>The concept of a confounding variable: what is the third thing?</li>
+              <li>Partial correlation: holding a third variable constant — conceptual introduction</li>
+              <li>Directionality: when A correlates with B, could B cause A?</li>
+              <li>The ecological fallacy: correlations at the group level may not apply to individuals</li>
+              <li>Implications for psychological research: media misinterpretation of correlation findings</li>
+            </ul>
+            <h4 class="session-title">Classroom Activity</h4>
+            <ul>
+              <li>Students identify a plausible confound in a dataset with a strong correlation, subset the data by that
+                confound, and compute the correlation separately within each subset</li>
+              <li>Writing exercise: write a single paragraph a journalist might write about the finding, then a
+                corrected version written by a researcher</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="s3-5" class="session-card">
+          <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
+            <span class="session-num">3.5</span>
+            <h4>Introduction to Regression and Chi-Square: Prediction and Independence</h4>
+            <span class="session-toggle">▾</span>
+          </div>
+          <div class="session-body">
+            <div class="box box-mist">
+              <div class="box-label">Section Overview</div>
+              <p>Simple linear regression as a natural extension of correlation — moving from describing a relationship
+                to predicting a value — and chi-square as the tool for asking whether two categorical variables are
+                related. Both are implemented at least partially from scratch.</p>
+            </div>
+            <h4 class="session-title">Topics Covered</h4>
+            <ul>
+              <li>From correlation to regression: the line of best fit as a predictive model</li>
+              <li>The slope and intercept: what each means in the context of the variables</li>
+              <li>Residuals: the difference between prediction and reality</li>
+              <li>R-squared: what proportion of variance in Y is explained by X?</li>
+              <li>Chi-square: testing whether the distribution of one categorical variable is independent of another
+              </li>
+              <li>Observed vs. expected frequencies; computing chi-square manually in Python</li>
+            </ul>
+            <h4 class="session-title">Classroom Activity</h4>
+            <ul>
+              <li>Regression: students implement the OLS formula for slope and intercept manually, plot the resulting
+                line over a scatter plot, then use sklearn to verify</li>
+              <li>Chi-square: given a contingency table (gender × diagnosis), students compute expected frequencies and
+                chi-square without scipy, then verify with it</li>
+            </ul>
+            <em class="note">Concurrent Statistics Link: Both regression and chi-square are being introduced
+              simultaneously in the statistics course. This session gives students a concrete computational model that
+              will deepen their understanding of the formal treatment they are receiving in parallel.</em>
+          </div>
+        </div>
+
+        <h3 class="subsection">Unit 3 Section Summary</h3>
+        <table class="session-table">
+          <thead>
+            <tr>
+              <th>Section</th>
+              <th>Topic</th>
+              <th>Key Activities</th>
+              <th>Deliverable</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>3.1</td>
+              <td>Probability and Simulation</td>
+              <td>Null hypothesis simulation exercise</td>
+              <td>Simulation script with p-value estimate</td>
+            </tr>
+            <tr>
+              <td>3.2</td>
+              <td>The t-Test</td>
+              <td>Step-by-step guided implementation</td>
+              <td>Annotated t-test worksheet and script</td>
+            </tr>
+            <tr>
+              <td>3.3</td>
+              <td>Correlation</td>
+              <td>Pearson vs Spearman comparison, matrix</td>
+              <td>Correlation analysis with plots</td>
+            </tr>
+            <tr>
+              <td>3.4</td>
+              <td>Causation and Confounds</td>
+              <td>Confound identification, journalist vs researcher writing</td>
+              <td>Short critical evaluation paragraph</td>
+            </tr>
+            <tr>
+              <td>3.5</td>
+              <td>Regression and Chi-Square</td>
+              <td>OLS implementation, contingency table exercise</td>
+              <td>Manual and library outputs compared</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ══ UNIT 4 ══ -->
+      <section id="unit4">
+        <div class="unit-banner">
+          <div class="unit-number">Unit 4 of 4</div>
+          <h2>Responsible communication with programming</h2>
+          <div class="unit-question">"How do I tell a story that is honest and clear?"</div>
+          <div class="unit-meta">
+            <span>6 hours</span>
+            <span>CO5, CO6</span>
+          </div>
+        </div>
+        <p>The final unit asks: now that you can compute things, can you communicate them honestly? This unit addresses
+          reproducibility, visualisation ethics, writing for non-technical audiences, and the skills of reflection and
+          synthesis. The capstone project draws on everything from the preceding three units.</p>
+
+        <div id="s4-1" class="session-card">
+          <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
+            <span class="session-num">4.1</span>
+            <h4>Reproducibility: Writing Code That Others Can Run</h4>
+            <span class="session-toggle">▾</span>
+          </div>
+          <div class="session-body">
+            <div class="box box-mist">
+              <div class="box-label">Section Overview</div>
+              <p>Students discover how quickly an undocumented script becomes opaque — even to its own author — and
+                learn the practices that make code a reproducible scientific artifact.</p>
+            </div>
+            <h4 class="session-title">Topics Covered</h4>
+            <ul>
+              <li>Code comments: when to comment and what not to comment</li>
+              <li>Docstrings: documenting functions for others</li>
+              <li>Variable naming as documentation: why <code>score_before_training</code> &gt; <code>s1</code></li>
+              <li>The analysis pipeline as a sequence: import, inspect, clean, describe, analyse, visualise, interpret
+              </li>
+              <li>Jupyter Notebooks as a format for literate programming</li>
+              <li>Setting a random seed for reproducibility in simulations</li>
+              <li>The replication crisis in psychology: a brief contextual discussion</li>
+            </ul>
+            <h4 class="session-title">Classroom Activity</h4>
+            <ul>
+              <li>Students receive a deliberately poorly documented script that performs a correct analysis. They
+                reconstruct what it does, add appropriate comments and docstrings, rename variables, and reorganise it —
+                without changing any analytical logic</li>
+              <li>Pair exercise: one student runs the partner's refactored script and records every point of confusion.
+                These confusions become the agenda for a short revision</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="s4-2" class="session-card">
+          <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
+            <span class="session-num">4.2</span>
+            <h4>Visualisation Ethics: Honesty in Charts</h4>
+            <span class="session-toggle">▾</span>
+          </div>
+          <div class="session-body">
+            <div class="box box-mist">
+              <div class="box-label">Section Overview</div>
+              <p>Students build problematic visualisations deliberately, understand why they mislead, and then correct
+                them. The goal is critical literacy as much as technical skill.</p>
+            </div>
+            <h4 class="session-title">Topics Covered</h4>
+            <ul>
+              <li>Truncated y-axes: making small differences look large</li>
+              <li>Cherry-picking time windows in a time-series plot</li>
+              <li>Inappropriate chart types: 3D pie charts, dual-axis plots with arbitrary scales</li>
+              <li>Missing error bars or confidence intervals</li>
+              <li>Colour choices that mislead: gradients implying order where there is none</li>
+              <li>APA and ethical reporting standards for figures</li>
+            </ul>
+            <h4 class="session-title">Classroom Activity</h4>
+            <ul>
+              <li>'Spot the Manipulation': students are shown six published-style charts containing at least one
+                misleading choice each, and must identify the problem and suggest a correction</li>
+              <li>Fix it: students recreate two of these charts correctly in Python, writing a one-sentence APA-style
+                caption for each</li>
+            </ul>
+            <em class="note">A misleading visualisation is not always the result of bad intent. Often it reflects a
+              failure to think from the reader's perspective, or an uncritical acceptance of software defaults.</em>
+          </div>
+        </div>
+
+        <div id="s4-3" class="session-card">
+          <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
+            <span class="session-num">4.3</span>
+            <h4>Writing for Two Audiences: Researchers and Non-Researchers</h4>
+            <span class="session-toggle">▾</span>
+          </div>
+          <div class="session-body">
+            <div class="box box-mist">
+              <div class="box-label">Section Overview</div>
+              <p>Students take a Python-generated analysis and write two interpretations of the same result: one for a
+                peer reviewer, and one for a general reader. The exercise reveals how much translation is required and
+                what is lost or gained in each version.</p>
+            </div>
+            <h4 class="session-title">Topics Covered</h4>
+            <ul>
+              <li>What a results section should contain: statistic, df, p-value, effect size, direction</li>
+              <li>Translating statistical language for non-specialist audiences</li>
+              <li>Common misinterpretations: what a p-value is not, what 'no significant difference' does not mean</li>
+              <li>Reporting limitations: what the analysis cannot tell us</li>
+              <li>Connecting to ethical data reporting standards from the R programming course</li>
+            </ul>
+            <h4 class="session-title">Classroom Activity</h4>
+            <ul>
+              <li>Given output of a correlation analysis (r = 0.43, p = 0.02, n = 36), students write: (a) a formal
+                APA-style results paragraph, and (b) a three-sentence plain-language explanation for a school newsletter
+              </li>
+              <li>Pairs read each other's versions and discuss where the technical version is inaccessible and where the
+                plain-language version has been oversimplified</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="s4-4" class="session-card">
+          <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
+            <span class="session-num">4.4</span>
+            <h4>End-to-End Pipeline: Applying the Full Workflow</h4>
+            <span class="session-toggle">▾</span>
+          </div>
+          <div class="session-body">
+            <div class="box box-mist">
+              <div class="box-label">Section Overview</div>
+              <p>A supervised capstone exercise. Students receive a dataset they have not seen before and a brief
+                research question, and must apply the complete analytical pipeline working individually or in pairs.</p>
+            </div>
+            <h4 class="session-title">Pipeline Steps</h4>
             <ol>
-              <li>Describe one concept from your statistics course that you now understand differently because of writing code to implement it.</li>
-              <li>Describe a moment in this course when you were confused. What were you confused about? How did you resolve it?</li>
-              <li>If you were to explain to a friend what 'computational thinking' means, what would you say?</li>
-              <li>What is one thing you wish you had been told at the start of this course?</li>
-              <li>What is one question about data or programming that this course has left you wanting to explore?</li>
+              <li>Load and inspect the dataset: shape, types, missing values</li>
+              <li>Clean: address issues found in step 1; document all decisions</li>
+              <li>Describe: compute and display relevant descriptive statistics</li>
+              <li>Visualise the distributions of key variables</li>
+              <li>Formulate and test a hypothesis appropriate to the research question</li>
+              <li>Visualise the relationship of interest</li>
+              <li>Interpret: what does the analysis suggest? What can it not tell us?</li>
+              <li>Reflect: what would you do differently with more time or more data?</li>
             </ol>
+            <em class="note">Instructor Role: The instructor does not answer "how do I code X?" questions in this
+              session. Instead, questions are redirected: "What are you trying to find out at this step? What would the
+              answer look like?" This scaffolds independent problem-solving.</em>
           </div>
-          <em class="note">Closing Note: This course has not made you a programmer. It has done something more specific: it has given you a way of taking a problem apart, representing it precisely, and testing your understanding of it by trying to make a machine do it. The tools will change. The way of thinking does not have to.</em>
         </div>
-      </div>
 
-      <h3 class="subsection">Unit 4 Section Summary</h3>
-      <table class="session-table">
-        <thead><tr><th>Section</th><th>Topic</th><th>Key Activities</th><th>Deliverable</th></tr></thead>
-        <tbody>
-          <tr><td>4.1</td><td>Reproducibility</td><td>Refactoring undocumented script, peer confusion audit</td><td>Fully documented and reorganised script</td></tr>
-          <tr><td>4.2</td><td>Visualisation Ethics</td><td>Spot the manipulation, fix-it exercise</td><td>Two corrected charts with APA captions</td></tr>
-          <tr><td>4.3</td><td>Two Audiences</td><td>Dual-audience writing exercise</td><td>APA paragraph and plain-language version</td></tr>
-          <tr><td>4.4</td><td>End-to-End Pipeline</td><td>Supervised novel dataset analysis</td><td>Complete documented analysis notebook</td></tr>
-          <tr><td>4.5</td><td>Reflection and Discussion</td><td>Mini-presentations, guided reflection</td><td>Written reflection (300–400 words)</td></tr>
-        </tbody>
-      </table>
-    </section>
+        <div id="s4-5" class="session-card">
+          <div class="session-header" onclick="this.parentElement.classList.toggle('open')">
+            <span class="session-num">4.5</span>
+            <h4>Reflection and the Bigger Picture</h4>
+            <span class="session-toggle">▾</span>
+          </div>
+          <div class="session-body">
+            <div class="box box-mist">
+              <div class="box-label">Section Overview</div>
+              <p>The final session steps back from code entirely. Students present their pipeline exercise briefly,
+                share one thing that surprised them, and engage in a structured reflection on how computational thinking
+                has changed how they think about statistics, measurement, and research.</p>
+            </div>
+            <h4 class="session-title">Structure of the Section</h4>
+            <ul>
+              <li>Brief presentations: each student or pair shares one visualisation and one finding from Section 4.4
+                (20 minutes total)</li>
+              <li>Structured written reflection responding to the prompts below</li>
+              <li>Whole-group discussion: what concepts from statistics do you now understand differently?</li>
+              <li>Looking ahead: brief introduction to what Python can do that this course has not covered — NLP, web
+                scraping, machine learning — as motivation for continued learning</li>
+            </ul>
+            <div class="box box-gold">
+              <div class="box-label">Reflection Prompts</div>
+              <ol>
+                <li>Describe one concept from your statistics course that you now understand differently because of
+                  writing code to implement it.</li>
+                <li>Describe a moment in this course when you were confused. What were you confused about? How did you
+                  resolve it?</li>
+                <li>If you were to explain to a friend what 'computational thinking' means, what would you say?</li>
+                <li>What is one thing you wish you had been told at the start of this course?</li>
+                <li>What is one question about data or programming that this course has left you wanting to explore?
+                </li>
+              </ol>
+            </div>
+            <em class="note">Closing Note: This course has not made you a programmer. It has done something more
+              specific: it has given you a way of taking a problem apart, representing it precisely, and testing your
+              understanding of it by trying to make a machine do it. The tools will change. The way of thinking does not
+              have to.</em>
+          </div>
+        </div>
 
-  </div><!-- .content-wrap -->
+        <h3 class="subsection">Unit 4 Section Summary</h3>
+        <table class="session-table">
+          <thead>
+            <tr>
+              <th>Section</th>
+              <th>Topic</th>
+              <th>Key Activities</th>
+              <th>Deliverable</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>4.1</td>
+              <td>Reproducibility</td>
+              <td>Refactoring undocumented script, peer confusion audit</td>
+              <td>Fully documented and reorganised script</td>
+            </tr>
+            <tr>
+              <td>4.2</td>
+              <td>Visualisation Ethics</td>
+              <td>Spot the manipulation, fix-it exercise</td>
+              <td>Two corrected charts with APA captions</td>
+            </tr>
+            <tr>
+              <td>4.3</td>
+              <td>Two Audiences</td>
+              <td>Dual-audience writing exercise</td>
+              <td>APA paragraph and plain-language version</td>
+            </tr>
+            <tr>
+              <td>4.4</td>
+              <td>End-to-End Pipeline</td>
+              <td>Supervised novel dataset analysis</td>
+              <td>Complete documented analysis notebook</td>
+            </tr>
+            <tr>
+              <td>4.5</td>
+              <td>Reflection and Discussion</td>
+              <td>Mini-presentations, guided reflection</td>
+              <td>Written reflection (300–400 words)</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-  <footer>
-    <strong>Python for Psychological Inquiry</strong> — Course Syllabus<br>
-    BSc Psychology, Year 2 Odd Semester · Designed for an Indian Institute Context
-  </footer>
+    </div><!-- .content-wrap -->
 
-</div><!-- #main -->
+    <footer>
+      <strong>Python for Psychological Inquiry</strong> — Course Syllabus<br>
+      BSc Psychology, Year 2 Odd Semester · Designed for an Indian Institute Context
+    </footer>
 
-<script>
-  // Active nav link on scroll
-  const sections = document.querySelectorAll('section[id], header[id]');
-  const navLinks = document.querySelectorAll('#sidebar nav a');
+  </div><!-- #main -->
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        navLinks.forEach(a => a.classList.remove('active'));
-        const active = document.querySelector(`#sidebar nav a[href="#${entry.target.id}"]`);
-        if (active) active.classList.add('active');
-      }
+  <script>
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('section[id], header[id]');
+    const navLinks = document.querySelectorAll('#sidebar nav a');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(a => a.classList.remove('active'));
+          const active = document.querySelector(`#sidebar nav a[href="#${entry.target.id}"]`);
+          if (active) active.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+
+    sections.forEach(s => observer.observe(s));
+
+    // Close mobile sidebar on link click
+    navLinks.forEach(a => {
+      a.addEventListener('click', () => {
+        document.getElementById('sidebar').classList.remove('open');
+      });
     });
-  }, { rootMargin: '-20% 0px -70% 0px' });
-
-  sections.forEach(s => observer.observe(s));
-
-  // Close mobile sidebar on link click
-  navLinks.forEach(a => {
-    a.addEventListener('click', () => {
-      document.getElementById('sidebar').classList.remove('open');
-    });
-  });
-</script>
+  </script>
 </body>
+
 </html>

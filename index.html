@@ -1,205 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Python for Psychological Inquiry — Course Syllabus</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<button id="hamburger" aria-label="Toggle navigation" onclick="document.getElementById('sidebar').classList.toggle('open')">
-  <span></span><span></span><span></span>
-</button>
+  <button id="hamburger" aria-label="Toggle navigation"
+    onclick="document.getElementById('sidebar').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
 
-<!-- SIDEBAR -->
-<aside id="sidebar">
-  <div class="brand">
-    <div class="course-tag">BSc Psychology · Year 2</div>
-    <h2>Python for Psychological Inquiry</h2>
-  </div>
-  <nav>
-    <div class="nav-section">Course</div>
-    <a href="#overview">Overview</a>
-    <a href="#rationale">Rationale</a>
-    <a href="#outcomes">Course Outcomes</a>
-    <a href="#objectives">Learning Objectives</a>
-
-    <div class="nav-section">Units</div>
-    <a href="../pages/units.html" class="unit-link">More Details</a>
-
-    <div class="nav-section">Reference</div>
-    <a href="pages/references.html">More Details</a>
-
-  </nav>
-</aside>
-
-<!-- MAIN -->
-<div id="main">
-
-  <!-- HERO -->
-  <header id="hero">
-    <div class="eyebrow">Course Syllabus &amp; Teaching Plan</div>
-    <h1>Python for Psychological Inquiry</h1>
-    <p class="subtitle">A Problem-Solving Approach to Programming</p>
-    <div class="meta-grid">
-      <div class="meta-card"><div class="label">Programme</div><div class="value">BSc Psychology</div></div>
-      <div class="meta-card"><div class="label">Year / Semester</div><div class="value">Year 2 Odd Semester</div></div>
-      <div class="meta-card"><div class="label">Credits</div><div class="value">4 Credits</div></div>
-      <div class="meta-card"><div class="label">Total Hours</div><div class="value">30 hrs (instructional and assessment)</div></div>
-      <div class="meta-card"><div class="label">Prerequisites</div><div class="value">Statistics (4 credits) · R Programming (2 credits)</div></div>
-      <div class="meta-card"><div class="label">Concurrent Course</div><div class="value">Advanced Statistics</div></div>
+  <!-- SIDEBAR -->
+  <aside id="sidebar">
+    <div class="brand">
+      <div class="course-tag">BSc Psychology · Year 2</div>
+      <h2>Python for Psychological Inquiry</h2>
     </div>
-  </header>
+    <nav>
+      <div class="nav-section">Course</div>
+      <a href="#overview">Overview</a>
+      <a href="#rationale">Rationale</a>
+      <a href="#outcomes">Course Outcomes</a>
+      <a href="#objectives">Learning Objectives</a>
 
-  <div class="content-wrap">
+      <div class="nav-section">Units</div>
+      <a href="../pages/units.html" class="unit-link">More Details</a>
 
-    <!-- PREAMBLE -->
-    <section id="overview">
-      <h2 class="section-title"><span class="section-icon">✦</span> A Note from the Course Designer</h2>
-      <p>This course is built on a single conviction: <strong>programming is not primarily about syntax. It is about learning to think.</strong></p>
-      <p>You have already studied statistics and written code in R. You understand what a variable is, what a distribution looks like, and what it means for a result to be significant. What this course asks is something different — not what the formula is, but why it exists. Not how to call a function, but what problem that function was designed to solve.</p>
-      <p>Python is chosen as the vehicle for this journey because it is versatile, readable, and widely used in psychological research, data science, and beyond. But Python is never the destination. The destination is a way of approaching problems: breaking them into pieces, representing information clearly, testing ideas systematically, and communicating findings honestly.</p>
-      <p>This course deliberately connects every new programming concept back to questions you already care about — questions about human behaviour, about measurement, about what data can and cannot tell us.</p>
-      <em class="note">Because Advanced Statistics runs concurrently, this course is coordinated to amplify rather than duplicate that content. You will frequently find that something you are exploring in statistics — a t-test, a correlation, a distribution — appears here not as a formula to apply but as a problem to model.</em>
-    </section>
+      <div class="nav-section">Reference</div>
+      <a href="pages/references.html">More Details</a>
 
-    <!-- RATIONALE -->
-    <section id="rationale">
-      <h2 class="section-title"><span class="section-icon">◈</span> Rationale</h2>
-      <p>Second-year psychology students bring a distinctive academic profile: they have been introduced to inferential thinking through statistics, they have experience writing structured code in R, and they are beginning to ask genuine research questions about human behaviour. This course is designed for precisely this moment.</p>
-      <p>Rather than treating Python as a new tool to be added to a toolkit, this course frames it as a lens through which to examine familiar ideas more carefully. When students learn to represent a distribution as a list of numbers and write code to compute its mean, they are not just learning Python — they are revisiting the concept of a mean and discovering what it is made of.</p>
-      <p>The course does not assume that students will become programmers. It assumes that they will become researchers and practitioners who work with data, who need to evaluate computational claims, and who benefit from understanding how the tools they use actually work.</p>
+    </nav>
+  </aside>
 
-      <h3 class="subsection">Structure at a Glance</h3>
-      <table class="overview-table">
-        <thead><tr><th>Unit</th><th>Title</th><th>Central Question</th><th>Hours</th></tr></thead>
-        <tbody>
-          <tr><td>Unit 1</td><td>The philosophy of computing</td><td><em>How does a computer understand what I mean?</em></td><td>6 hours</td></tr>
-          <tr><td>Unit 2</td><td>Understand and manipulate data structures</td><td><em>How do I represent and explore what I have collected?</em></td><td>6 hours</td></tr>
-          <tr><td>Unit 3</td><td>Identifying patterns and evidence in data</td><td><em>How do I find signal within noise?</em></td><td>8 hours</td></tr>
-          <tr><td>Unit 4</td><td>Responsible communication with programming</td><td><em>How do I tell a story that is honest and clear?</em></td><td>6 hours</td></tr>
-        </tbody>
-      </table>
-    </section>
+  <!-- MAIN -->
+  <div id="main">
 
-    <!-- COURSE OUTCOMES -->
-    <section id="outcomes">
-      <h2 class="section-title"><span class="section-icon">◉</span> Course Outcomes</h2>
-      <p>By the end of this course, students will be able to:</p>
-      <div class="co-grid">
-        <div class="co-card">
-          <div class="co-id">CO1 — COMPUTATIONAL THINKING</div>
-          <p>Decompose a psychological or behavioural research question into discrete, programmable steps, demonstrating understanding of how problems are structured before code is written.</p>
+    <!-- HERO -->
+    <header id="hero">
+      <div class="eyebrow">Course Syllabus &amp; Teaching Plan</div>
+      <h1>Python for Psychological Inquiry</h1>
+      <p class="subtitle">A Problem-Solving Approach to Programming</p>
+      <div class="meta-grid">
+        <div class="meta-card">
+          <div class="label">Programme</div>
+          <div class="value">BSc Psychology</div>
         </div>
-        <div class="co-card">
-          <div class="co-id">CO2 — PYTHON LITERACY</div>
-          <p>Write, read, and debug Python code at a level sufficient to perform data loading, cleaning, exploration, basic analysis, and visualisation, without reliance on a single library's 'magic' functions.</p>
+        <div class="meta-card">
+          <div class="label">Year / Semester</div>
+          <div class="value">Year 2 Odd Semester</div>
         </div>
-        <div class="co-card">
-          <div class="co-id">CO3 — DATA REPRESENTATION</div>
-          <p>Select and justify appropriate data structures (lists, dictionaries, dataframes) to represent psychological datasets, and explain how choice of representation affects what operations are possible.</p>
+        <div class="meta-card">
+          <div class="label">Credits</div>
+          <div class="value">4 Credits</div>
         </div>
-        <div class="co-card">
-          <div class="co-id">CO4 — STATISTICAL INTEGRATION</div>
-          <p>Implement, from first principles, descriptive statistics and at least two inferential procedures covered in the concurrent statistics course, interpreting outputs as a psychologist rather than merely as a programmer.</p>
+        <div class="meta-card">
+          <div class="label">Total Hours</div>
+          <div class="value">30 hrs (instructional and assessment)</div>
         </div>
-        <div class="co-card">
-          <div class="co-id">CO5 — CRITICAL EVALUATION</div>
-          <p>Identify sources of error, bias, and misrepresentation in code-generated analyses and visualisations, and apply ethical data-reporting practices consistent with psychological research standards.</p>
+        <div class="meta-card">
+          <div class="label">Prerequisites</div>
+          <div class="value">Statistics (4 credits) · R Programming (2 credits)</div>
         </div>
-        <div class="co-card">
-          <div class="co-id">CO6 — COMMUNICATION</div>
-          <p>Produce a documented, reproducible analysis script and accompanying written interpretation that could be understood and re-run by a colleague unfamiliar with the original dataset.</p>
+        <div class="meta-card">
+          <div class="label">Concurrent Course</div>
+          <div class="value">Advanced Statistics</div>
         </div>
       </div>
-    </section>
+    </header>
 
-    <!-- LEARNING OBJECTIVES -->
-    <section id="objectives">
-      <h2 class="section-title"><span class="section-icon">▸</span> Learning Objectives by Unit</h2>
-      <p>Each objective is assessable and maps directly to the course outcomes above. Objectives use Bloom's Taxonomy action verbs to indicate the level of cognitive engagement expected.</p>
+    <div class="content-wrap">
 
-      <h3 class="subsection">Unit 1 — The philosophy of computing</h3>
-      <em class="note">Theme: The relationship between human intention and machine execution</em>
-      <ul>
-        <li>Define what an algorithm is and construct a plain-language algorithm for a familiar psychological task.</li>
-        <li>Distinguish between Python syntax, logic errors, and semantic errors, and use error messages productively.</li>
-        <li>Assign and manipulate variables using Python's core data types and relate each type to kinds of data encountered in psychology.</li>
-        <li>Use conditional statements to model decision-making scenarios analogous to those in diagnostic or classification tasks.</li>
-        <li>Construct and traverse loops to automate repetitive computations over collections of data.</li>
-        <li>Write and call simple functions, explaining the concepts of input, output, and encapsulation in plain language.</li>
-        <li>Compare the experience of writing Python with their prior experience in R, articulating what is similar, what is different, and why.</li>
-      </ul>
+      <!-- PREAMBLE -->
+      <section id="overview">
+        <h2 class="section-title"><span class="section-icon">✦</span> A Note from the Course Designer</h2>
+        <p>This course is built on a single conviction: <strong>programming is not primarily about syntax. It is about
+            learning to think.</strong></p>
+        <p>You have already studied statistics and written code in R. You understand what a variable is, what a
+          distribution looks like, and what it means for a result to be significant. What this course asks is something
+          different — not what the formula is, but why it exists. Not how to call a function, but what problem that
+          function was designed to solve.</p>
+        <p>Python is chosen as the vehicle for this journey because it is versatile, readable, and widely used in
+          psychological research, data science, and beyond. But Python is never the destination. The destination is a
+          way of approaching problems: breaking them into pieces, representing information clearly, testing ideas
+          systematically, and communicating findings honestly.</p>
+        <p>This course deliberately connects every new programming concept back to questions you already care about —
+          questions about human behaviour, about measurement, about what data can and cannot tell us.</p>
+        <em class="note">Because Advanced Statistics runs concurrently, this course is coordinated to amplify rather
+          than duplicate that content. You will frequently find that something you are exploring in statistics — a
+          t-test, a correlation, a distribution — appears here not as a formula to apply but as a problem to model.</em>
+      </section>
 
-      <h3 class="subsection">Unit 2 — Understand and manipulate data structures</h3>
-      <em class="note">Theme: Representing, cleaning, and understanding real data before analysis begins</em>
-      <ul>
-        <li>Load a dataset from a CSV file using pandas and inspect its structure (shape, column types, missing values) before performing any analysis.</li>
-        <li>Choose between lists, tuples, dictionaries, and DataFrames for a given representation task and justify the choice.</li>
-        <li>Identify and handle missing data using appropriate strategies with awareness of the psychological and ethical implications of each choice.</li>
-        <li>Compute descriptive statistics from scratch using base Python, then verify results using library functions — understanding the difference between implementation and invocation.</li>
-        <li>Produce and interpret frequency tables and grouped summaries for both nominal and continuous data.</li>
-        <li>Explain what it means for data to be 'tidy' and restructure a messy dataset into a tidy format.</li>
-        <li>Distinguish between levels of measurement in a dataset and explain why this distinction affects which operations are meaningful.</li>
-      </ul>
+      <!-- RATIONALE -->
+      <section id="rationale">
+        <h2 class="section-title"><span class="section-icon">◈</span> Rationale</h2>
+        <p>Second-year psychology students bring a distinctive academic profile: they have been introduced to
+          inferential thinking through statistics, they have experience writing structured code in R, and they are
+          beginning to ask genuine research questions about human behaviour. This course is designed for precisely this
+          moment.</p>
+        <p>Rather than treating Python as a new tool to be added to a toolkit, this course frames it as a lens through
+          which to examine familiar ideas more carefully. When students learn to represent a distribution as a list of
+          numbers and write code to compute its mean, they are not just learning Python — they are revisiting the
+          concept of a mean and discovering what it is made of.</p>
+        <p>The course does not assume that students will become programmers. It assumes that they will become
+          researchers and practitioners who work with data, who need to evaluate computational claims, and who benefit
+          from understanding how the tools they use actually work.</p>
 
-      <h3 class="subsection">Unit 3 — Identifying patterns and evidence in data</h3>
-      <em class="note">Theme: Using Python to probe hypotheses and understand relationships</em>
-      <ul>
-        <li>Simulate a sampling distribution using loops and random number generation, and use this to build intuition for the concept of a p-value without formula-first reasoning.</li>
-        <li>Implement a t-test computation step by step and interpret the output in the context of a psychological hypothesis.</li>
-        <li>Compute Pearson's and Spearman's correlation coefficients and explain when each is appropriate.</li>
-        <li>Visualise the relationship between two variables and read the output critically rather than accepting it at face value.</li>
-        <li>Articulate the distinction between correlation and causation with reference to a specific dataset, identifying potential confounds.</li>
-        <li>Describe what a simple linear regression equation represents, implement it manually, and interpret the slope and intercept in psychological terms.</li>
-        <li>Produce a chi-square contingency analysis for categorical data and link it to the concept of independence.</li>
-      </ul>
+        <h3 class="subsection">Structure at a Glance</h3>
+        <table class="overview-table">
+          <thead>
+            <tr>
+              <th>Unit</th>
+              <th>Title</th>
+              <th>Central Question</th>
+              <th>Hours</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Unit 1</td>
+              <td>The philosophy of computing</td>
+              <td><em>How does a computer understand what I mean?</em></td>
+              <td>6 hours</td>
+            </tr>
+            <tr>
+              <td>Unit 2</td>
+              <td>Understand and manipulate data structures</td>
+              <td><em>How do I represent and explore what I have collected?</em></td>
+              <td>6 hours</td>
+            </tr>
+            <tr>
+              <td>Unit 3</td>
+              <td>Identifying patterns and evidence in data</td>
+              <td><em>How do I find signal within noise?</em></td>
+              <td>8 hours</td>
+            </tr>
+            <tr>
+              <td>Unit 4</td>
+              <td>Responsible communication with programming</td>
+              <td><em>How do I tell a story that is honest and clear?</em></td>
+              <td>6 hours</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-      <h3 class="subsection">Unit 4 — Responsible communication with programming</h3>
-      <em class="note">Theme: Writing code that is readable, reproducible, and honest</em>
-      <ul>
-        <li>Write a fully commented and documented analysis script that a peer could run independently on a fresh machine.</li>
-        <li>Design visualisations that accurately represent data, identifying and correcting common misleading choices.</li>
-        <li>Apply a consistent and principled workflow to a novel dataset: load, inspect, clean, describe, analyse, visualise, interpret.</li>
-        <li>Discuss the ethical responsibilities that arise when presenting computational results, including transparency about analytical decisions and limitations.</li>
-        <li>Produce a brief written interpretation of a Python-generated analysis accessible to an audience without programming knowledge.</li>
-        <li>Reflect on the course as a whole, articulating how computational thinking has changed or deepened their understanding of at least one concept from their statistics curriculum.</li>
-      </ul>
-    </section>
+      <!-- COURSE OUTCOMES -->
+      <section id="outcomes">
+        <h2 class="section-title"><span class="section-icon">◉</span> Course Outcomes</h2>
+        <p>By the end of this course, students will be able to:</p>
+        <div class="co-grid">
+          <div class="co-card">
+            <div class="co-id">CO1 — COMPUTATIONAL THINKING</div>
+            <p>Decompose a psychological or behavioural research question into discrete, programmable steps,
+              demonstrating understanding of how problems are structured before code is written.</p>
+          </div>
+          <div class="co-card">
+            <div class="co-id">CO2 — PYTHON LITERACY</div>
+            <p>Write, read, and debug Python code at a level sufficient to perform data loading, cleaning, exploration,
+              basic analysis, and visualisation, without reliance on a single library's 'magic' functions.</p>
+          </div>
+          <div class="co-card">
+            <div class="co-id">CO3 — DATA REPRESENTATION</div>
+            <p>Select and justify appropriate data structures (lists, dictionaries, dataframes) to represent
+              psychological datasets, and explain how choice of representation affects what operations are possible.</p>
+          </div>
+          <div class="co-card">
+            <div class="co-id">CO4 — STATISTICAL INTEGRATION</div>
+            <p>Implement, from first principles, descriptive statistics and at least two inferential procedures covered
+              in the concurrent statistics course, interpreting outputs as a psychologist rather than merely as a
+              programmer.</p>
+          </div>
+          <div class="co-card">
+            <div class="co-id">CO5 — CRITICAL EVALUATION</div>
+            <p>Identify sources of error, bias, and misrepresentation in code-generated analyses and visualisations, and
+              apply ethical data-reporting practices consistent with psychological research standards.</p>
+          </div>
+          <div class="co-card">
+            <div class="co-id">CO6 — COMMUNICATION</div>
+            <p>Produce a documented, reproducible analysis script and accompanying written interpretation that could be
+              understood and re-run by a colleague unfamiliar with the original dataset.</p>
+          </div>
+        </div>
+      </section>
 
-  </div><!-- .content-wrap -->
-  
-  <footer>
-    <strong>Python for Psychological Inquiry</strong> — Course Syllabus<br>
-    BSc Psychology, Year 2 Odd Semester · Designed for an Indian Institute Context
-  </footer>
+      <!-- LEARNING OBJECTIVES -->
+      <section id="objectives">
+        <h2 class="section-title"><span class="section-icon">▸</span> Learning Objectives by Unit</h2>
+        <p>Each objective is assessable and maps directly to the course outcomes above. Objectives use Bloom's Taxonomy
+          action verbs to indicate the level of cognitive engagement expected.</p>
 
-</div><!-- #main -->
+        <h3 class="subsection">Unit 1 — The philosophy of computing</h3>
+        <em class="note">Theme: The relationship between human intention and machine execution</em>
+        <ul>
+          <li>Define what an algorithm is and construct a plain-language algorithm for a familiar psychological task.
+          </li>
+          <li>Distinguish between Python syntax, logic errors, and semantic errors, and use error messages productively.
+          </li>
+          <li>Assign and manipulate variables using Python's core data types and relate each type to kinds of data
+            encountered in psychology.</li>
+          <li>Use conditional statements to model decision-making scenarios analogous to those in diagnostic or
+            classification tasks.</li>
+          <li>Construct and traverse loops to automate repetitive computations over collections of data.</li>
+          <li>Write and call simple functions, explaining the concepts of input, output, and encapsulation in plain
+            language.</li>
+          <li>Compare the experience of writing Python with their prior experience in R, articulating what is similar,
+            what is different, and why.</li>
+        </ul>
 
-<script>
-  // Active nav link on scroll
-  const sections = document.querySelectorAll('section[id], header[id]');
-  const navLinks = document.querySelectorAll('#sidebar nav a');
+        <h3 class="subsection">Unit 2 — Understand and manipulate data structures</h3>
+        <em class="note">Theme: Representing, cleaning, and understanding real data before analysis begins</em>
+        <ul>
+          <li>Load a dataset from a CSV file using pandas and inspect its structure (shape, column types, missing
+            values) before performing any analysis.</li>
+          <li>Choose between lists, tuples, dictionaries, and DataFrames for a given representation task and justify the
+            choice.</li>
+          <li>Identify and handle missing data using appropriate strategies with awareness of the psychological and
+            ethical implications of each choice.</li>
+          <li>Compute descriptive statistics from scratch using base Python, then verify results using library functions
+            — understanding the difference between implementation and invocation.</li>
+          <li>Produce and interpret frequency tables and grouped summaries for both nominal and continuous data.</li>
+          <li>Explain what it means for data to be 'tidy' and restructure a messy dataset into a tidy format.</li>
+          <li>Distinguish between levels of measurement in a dataset and explain why this distinction affects which
+            operations are meaningful.</li>
+        </ul>
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        navLinks.forEach(a => a.classList.remove('active'));
-        const active = document.querySelector(`#sidebar nav a[href="#${entry.target.id}"]`);
-        if (active) active.classList.add('active');
-      }
+        <h3 class="subsection">Unit 3 — Identifying patterns and evidence in data</h3>
+        <em class="note">Theme: Using Python to probe hypotheses and understand relationships</em>
+        <ul>
+          <li>Simulate a sampling distribution using loops and random number generation, and use this to build intuition
+            for the concept of a p-value without formula-first reasoning.</li>
+          <li>Implement a t-test computation step by step and interpret the output in the context of a psychological
+            hypothesis.</li>
+          <li>Compute Pearson's and Spearman's correlation coefficients and explain when each is appropriate.</li>
+          <li>Visualise the relationship between two variables and read the output critically rather than accepting it
+            at face value.</li>
+          <li>Articulate the distinction between correlation and causation with reference to a specific dataset,
+            identifying potential confounds.</li>
+          <li>Describe what a simple linear regression equation represents, implement it manually, and interpret the
+            slope and intercept in psychological terms.</li>
+          <li>Produce a chi-square contingency analysis for categorical data and link it to the concept of independence.
+          </li>
+        </ul>
+
+        <h3 class="subsection">Unit 4 — Responsible communication with programming</h3>
+        <em class="note">Theme: Writing code that is readable, reproducible, and honest</em>
+        <ul>
+          <li>Write a fully commented and documented analysis script that a peer could run independently on a fresh
+            machine.</li>
+          <li>Design visualisations that accurately represent data, identifying and correcting common misleading
+            choices.</li>
+          <li>Apply a consistent and principled workflow to a novel dataset: load, inspect, clean, describe, analyse,
+            visualise, interpret.</li>
+          <li>Discuss the ethical responsibilities that arise when presenting computational results, including
+            transparency about analytical decisions and limitations.</li>
+          <li>Produce a brief written interpretation of a Python-generated analysis accessible to an audience without
+            programming knowledge.</li>
+          <li>Reflect on the course as a whole, articulating how computational thinking has changed or deepened their
+            understanding of at least one concept from their statistics curriculum.</li>
+        </ul>
+      </section>
+
+    </div><!-- .content-wrap -->
+
+    <footer>
+      <strong>Python for Psychological Inquiry</strong> — Course Syllabus<br>
+      BSc Psychology, Year 2 Odd Semester · Designed for an Indian Institute Context
+    </footer>
+
+  </div><!-- #main -->
+
+  <script>
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('section[id], header[id]');
+    const navLinks = document.querySelectorAll('#sidebar nav a');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(a => a.classList.remove('active'));
+          const active = document.querySelector(`#sidebar nav a[href="#${entry.target.id}"]`);
+          if (active) active.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+
+    sections.forEach(s => observer.observe(s));
+
+    // Close mobile sidebar on link click
+    navLinks.forEach(a => {
+      a.addEventListener('click', () => {
+        document.getElementById('sidebar').classList.remove('open');
+      });
     });
-  }, { rootMargin: '-20% 0px -70% 0px' });
-
-  sections.forEach(s => observer.observe(s));
-
-  // Close mobile sidebar on link click
-  navLinks.forEach(a => {
-    a.addEventListener('click', () => {
-      document.getElementById('sidebar').classList.remove('open');
-    });
-  });
-</script>
+  </script>
 </body>
+
 </html>
