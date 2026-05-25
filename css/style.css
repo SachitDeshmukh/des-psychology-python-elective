@@ -15,9 +15,9 @@
   --shadow-sm: 0 1px 4px rgba(27,58,92,0.07);
   --shadow-md: 0 4px 16px rgba(27,58,92,0.10);
   --radius: 6px;
-  --font-body: 'DM Sans', sans-serif;
-  --font-serif: 'Lora', Georgia, serif;
-  --font-mono: 'Source Code Pro', monospace;
+  --font-body: 'Mulish', sans-serif;
+  --font-serif: 'Mulish', serif;
+  --font-mono: 'SFMono-Regular', monospace;
 }
 
 *, *::before, *::after {
