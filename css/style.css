@@ -15,9 +15,10 @@
   --shadow-sm: 0 1px 4px rgba(27,58,92,0.07);
   --shadow-md: 0 4px 16px rgba(27,58,92,0.10);
   --radius: 6px;
-  --font-body: 'DM Sans', sans-serif;
-  --font-serif: 'Lora', Georgia, serif;
-  --font-mono: 'Source Code Pro', monospace;
+  --font-body: 'Mulish', sans-serif;
+  --font-serif: 'Mulish', serif;
+  --font-mono: 'SFMono-Regular', monospace;
+  --hamburger-height: 2px;
 }
 
 *, *::before, *::after {
@@ -65,6 +66,7 @@ body {
   letter-spacing: 0.12em;
   color: var(--teal-mid);
   text-transform: uppercase;
+  margin-top: calc(var(--hamburger-height) + var(--hamburger-height) + 1rem);
   margin-bottom: 6px;
 }
 
@@ -135,7 +137,7 @@ body {
   top: -40px;
   right: -40px;
   width: 320px;
-  height: 320px;
+  height: auto;
   border-radius: 50%;
   background: rgba(42,122,122,0.18);
   pointer-events: none;
@@ -181,9 +183,8 @@ body {
 
 #hero .meta-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(3, minmax(auto, 1fr));
   gap: 16px;
-  max-width: 720px;
 }
 
 #hero .meta-card {
@@ -211,7 +212,7 @@ body {
 /* ── CONTENT SECTIONS ────────────────────────── */
 
 .content-wrap {
-  max-width: 860px;
+  display: block;
   padding: 56px 64px;
 }
 
@@ -702,7 +703,8 @@ footer strong {
 /* ── HAMBURGER ───────────────────────────────── */
 
 #hamburger {
-  display: none;
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 14px;
   left: 14px;
@@ -719,7 +721,7 @@ footer strong {
 #hamburger span {
   display: block;
   width: 20px;
-  height: 2px;
+  height: var(--hamburger-height);
   background: white;
-  border-radius: 2px;
+  border-radius: var(--hamburger-height);
 }
