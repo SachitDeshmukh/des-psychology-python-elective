@@ -183,7 +183,7 @@ body {
 
 #hero .meta-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(auto, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 16px;
 }
 
@@ -361,7 +361,7 @@ ul.sub li {
 
 .co-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 16px;
   margin: 20px 0;
 }
@@ -529,6 +529,10 @@ ul.sub li {
 
 /* ── OVERVIEW TABLE ──────────────────────────── */
 
+.table-wrapper {
+  overflow-x: auto;
+}
+
 .overview-table {
   width: 100%;
   border-collapse: collapse;
@@ -691,7 +695,7 @@ footer strong {
 /* ── RESPONSIVE ──────────────────────────────── */
 
 @media (max-width: 900px) {
-  #sidebar { transform: translateX(-240px); }
+  #sidebar { transform: translateX(-100%); }
   #sidebar.open { transform: translateX(0); }
   #main { margin-left: 0; }
   .content-wrap { padding: 32px 24px; }
