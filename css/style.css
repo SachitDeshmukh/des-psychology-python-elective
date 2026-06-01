@@ -267,6 +267,8 @@ p {
   margin-bottom: 16px;
   font-size: 15.5px;
   color: var(--text);
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
 }
 
 p:last-child {
@@ -295,6 +297,8 @@ li {
   font-size: 15.5px;
   margin-bottom: 7px;
   color: var(--text);
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
 }
 
 li::marker {
